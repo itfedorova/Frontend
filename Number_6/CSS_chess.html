@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>*** unnamed text ***</title>
+</head>
+
+<body>
+  <style>
+    table.CHESS {
+      border-collapse: collapse;
+    }
+    
+    table.CHESS td {
+      width: 50px;
+      height: 50px;
+      border: solid gray 1px;
+    }
+    
+    tr:nth-child(2) td:nth-child(1n),
+    tr:nth-child(3) td:nth-child(1n),
+    tr:nth-child(8) td:nth-child(1n),
+    tr:nth-child(9) td:nth-child(1n) {
+      background-image: url(./chess.png);
+      background-repeat: no-repeat;
+    }
+    /*
+        задаем ширину боковых окантовок 
+    */
+    table.CHESS tr:nth-child(1n) td:first-child, /*левая*/
+    table.CHESS tr:nth-child(1n) td:last-child /*правая*/
+    {
+      width:25px;
+    }
+    
+    /*
+    задаем высоту верхней и нижней окантовок
+    */
+    table.CHESS tr:first-child td:nth-child(1n), /*верхняя*/
+    table.CHESS tr:last-child td:nth-child(1n) /*нижняя*/
+    {
+      height:25px;
+    }
+    /* Ладья белая*/
+    
+    tr:nth-child(2) td:nth-child(2),
+    tr:nth-child(2) td:nth-child(9) {
+      background-position: -100px -50px;
+    }
+    /* Ладья черная*/
+    
+    tr:nth-last-child(2) td:nth-child(2),
+    tr:nth-last-child(2) td:nth-child(9) {
+      background-position: -100px -1px;
+    }
+    /* Конь белый*/
+    
+    tr:nth-child(2) td:nth-child(3),
+    tr:nth-child(2) td:nth-child(8) {
+      background-position: -207px -48px;
+    }
+    /* Конь черный*/
+    
+    tr:nth-last-child(2) td:nth-child(3),
+    tr:nth-last-child(2) td:nth-child(8) {
+      background-position: -207px -1px;
+    }
+    /* Слон белый*/
+    
+    tr:nth-child(2) td:nth-child(4),
+    tr:nth-child(2) td:nth-child(7) {
+      background-position: -155px -48px;
+    }
+    /* Слон черный*/
+    
+    tr:nth-last-child(2) td:nth-child(4),
+    tr:nth-last-child(2) td:nth-child(7) {
+      background-position: -155px 2px;
+    }
+    /* Король белый'*/
+    
+    tr:nth-child(2) td:nth-child(6) {
+      background-position: 5px -48px;
+    }
+    /* Король черный'*/
+    
+    tr:nth-last-child(2) td:nth-child(6) {
+      background-position: 5px 2px;
+    }
+    /* Ферзь белый*/
+    
+    tr:nth-child(2) td:nth-child(5) {
+      background-position: -48px -48px;
+    }
+    /* Ферзь черный*/
+    
+    tr:nth-last-child(2) td:nth-child(5) {
+      background-position: -48px 2px;
+    }
+    /*Peshki белые*/
+    
+    tr:nth-child(3) td:nth-child(1n) {
+      background-position: -260px -48px;
+    }
+    /*Peshki черные*/
+    
+    tr:nth-last-child(3) td:nth-child(1n) {
+      background-position: -260px -1px;
+    }
+    /* шашечки */
+    
+    tr:nth-child(even) td:nth-child(even),
+    tr:nth-child(odd) td:nth-child(odd) {
+      background-color: #585858;
+    }
+    /* Зеленая оконтовка*/
+    
+    tr:nth-last-child(odd) td:last-child {
+      background: green;
+    }
+    
+    tr:nth-last-child(even) td:last-child {
+      background: green;
+    }
+    
+    tr:nth-child(odd) td:first-child {
+      background: green;
+    }
+    
+    tr:nth-child(even) td:first-child {
+      background: green;
+    }
+    
+    tr:first-child td:nth-child(even) {
+      background: green;
+    }
+    
+    tr:first-child td:nth-child(odd) {
+      background: green;
+    }
+    
+    tr:last-child td:nth-child(even) {
+      background: green;
+    }
+    
+    tr:last-child td:nth-child(odd) {
+      background: green;
+    }
+  </style>
+
+  <table class='CHESS'>
+
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
+</body>
+
+</html>

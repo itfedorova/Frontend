@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta charset=utf-8>
+        <title>LINK</title>
+        <style> 
+        .common a {height:20px; color:green; border-right: 5px solid red;
+        width: 120px;float:left; 
+        padding-left: 20px;}
+            
+        .common a:hover {color:red;}
+        
+        .one a {border-right: 5px solid red; width: 120px; float:left; 
+        padding-left: 18px;}
+        
+        .two {list-style-type: none; margin: 0;padding:0;}
+      
+      </style>   
+    </head>
+    <body>
+
+<!--one Использование div -->
+
+<div class="common">
+    <div><a href=''>первая ссылка</a></div>
+    <div ><a href=''>вторая ссылка</a></div>
+    <div ><a href=''>третья ссылка</a></div>
+</div>
+<br>
+
+<!-- one Использование table
+необходимо учитывать толщину таблицы-->
+
+<div class="common">
+<br>
+<table style="border-collapse: collapse;"  > 
+<tr>
+    <td class="one"><a href=''>первая ссылка</a></td>
+    <td class="one"><a href=''>вторая ссылка</a></td>
+    <td class="one"><a href=''>третья ссылка</a></td>
+</tr>
+</table>
+</div>
+
+
+
+<!--  Использование span -->
+
+
+<div class="common">
+<br>
+<span ><a href=''>первая ссылка</a></span>
+<span ><a href=''>вторая ссылка</a></span>
+<span ><a href=''>третья ссылка</a></span>
+</div>
+    </body>
+</html>
+
+
+<!-- Использование p -->
+
+<div class="common">
+<br>
+<p ><a href=''>первая ссылка</a></p>
+<p ><a href=''>вторая ссылка</a> </p>
+<p ><a href=''>третья ссылка</a></p>
+</div>
+
+
+<!--two Использование UL -->
+
+<div class="common">
+<br><br>
+<ul class="two">
+<li><a href=''>первая ссылка</a></li>
+<li><a href=''>вторая ссылка</a> </li>
+<li><a href=''>третья ссылка</a></li>
+</ul>
+</div>
+
