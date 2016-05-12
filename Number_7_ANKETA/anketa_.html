@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Метод confirm()</title>
+    <meta charset=utf-8>
+  
+</head>
+
+<body>
+    <script type="text/javascript">
+        
+        // Фамилия
+        var f = window.prompt("Введите вашу Фамилию", "Крокодилов");
+        if (f == null)
+        {
+            document.write();
+        }
+        else {
+            document.write("Ваше ФИО: " + f);
+        }
+         // Имя
+         var i = window.prompt("Введите ваше Имя", "Чебурашка");
+        if (i == null)
+        {
+            document.write();
+        }
+        else {
+          document.write(" " +i);
+        }
+         
+         // Отчество
+         var o = window.prompt("Введите ваше Отчество", "Генадьевич");
+        if (o == null)
+        {
+            document.write();
+        }
+        else {
+             document.write(" " + o + "<br>"); 
+        }
+        
+        //Возраст 
+        var years = window.prompt("Количество полных лет", "18");
+        var a = 365; 
+        var b =+ a;
+        var c = years % 4;
+        var days = (c * b) + (years - c) * a; 
+        var q = Number(years) + 5;
+         if (years == null)
+        {
+            document.write();
+        }
+        else {
+             document.write("Ваш возраст в годах:" + " " + years + "<br>"); 
+             document.write("Ваш возраст в днях:" + " " + days + "<br>"); 
+             document.write("Через 5 лет вам будет:" + " " + q + "<br>"); 
+        }
+        
+        //Sex
+        
+var sex = window.confirm("Ваш пол: Мужской? ") 
+  ? "Ваш пол: Мужской"+ "<br>" : "Ваш пол:Женский" + "<br>";
+   document.write(sex);
+   
+   
+        //на пенсии
+        var pn = window.confirm("Вы на пенсии: Да? ") 
+  ? "Вы на пенсии: Да" : "Вы на пенсии: Нет";
+   document.write(pn);
+   
+        
+        
+        
+    </script>
+</body>
+
+</html>
