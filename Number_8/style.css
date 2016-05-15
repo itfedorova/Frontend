@@ -1,0 +1,55 @@
+a {
+    color: red;
+}
+
+#karpov h1,
+#botvinik h1,
+#kasparov h1 {
+    padding: 15px;
+}
+
+#karpov p,
+#botvinik p,
+#kasparov p {
+    padding: 15px;
+}
+
+#botvinik a:hover {
+    text-decoration: line-through;
+}
+
+p:first-letter {
+    color: green;
+}
+
+h1:first-letter {
+    color: green;
+}
+
+div {
+    border: solid red 1px;
+}
+
+@media screen and (min-width: 601px) {
+    p {
+        font-size: 15px;
+    }
+    #botvinik {
+        max-width: 33%;
+        float: left;
+    }
+    #karpov {
+        width: 33%;
+        float: left;
+    }
+    #kasparov {
+        width: 33%;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    p {
+        font-size: 20px;
+    }
+}
