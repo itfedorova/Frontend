@@ -1,0 +1,203 @@
+ .menu {
+     margin: 36px auto;
+     width: 1320px;
+ }
+ 
+ .ice,
+ .coctail,
+ .muss,
+ .salat,
+ .sea,
+ .seledka {
+     height: 270px;
+     width: 440px;
+ }
+ 
+ .ice .column_ice {
+     display: block;
+     position: relative;
+     top: 5%;
+     left: 10px;
+     width: 60%;
+ }
+ 
+ .ice .answer {
+     position: relative;
+     bottom: -190px;
+ }
+ 
+ .ice .answer span {
+     color: brown;
+     font-weight: bold;
+     font-size: small;
+ }
+ 
+ .coctail .column_coctail {
+     display: block;
+     position: relative;
+     top: 5%;
+     left: 10px;
+     width: 60%;
+ }
+ 
+ .coctail .answer {
+     position: relative;
+     bottom: -190px;
+ }
+ 
+ .coctail .answer span {
+     color: brown;
+     font-weight: bold;
+     font-size: small;
+ }
+ 
+ .muss .column_muss {
+     display: block;
+     position: relative;
+     top: 5%;
+     left: 10px;
+     width: 60%;
+ }
+ 
+ .muss .answer {
+     position: relative;
+     bottom: -190px;
+ }
+ 
+ .muss .answer span {
+     color: brown;
+     font-weight: bold;
+     font-size: small;
+ }
+ 
+ 
+  
+ .salat .column_salat {
+     display: block;
+     position: relative;
+     top: 5%;
+     left: 10px;
+     width: 60%;
+ }
+ 
+ .salat .answer {
+     position: relative;
+     bottom: -190px;
+ }
+ 
+ .salat .answer span {
+     color: brown;
+     font-weight: bold;
+     font-size: small;
+ }
+ 
+ 
+  .sea .column_sea {
+     display: block;
+     position: relative;
+     top: 5%;
+     left: 10px;
+     width: 60%;
+ }
+ 
+ .sea .answer {
+     position: relative;
+     bottom: -190px;
+ }
+ 
+ .sea .answer span {
+     color: brown;
+     font-weight: bold;
+     font-size: small;
+ }
+ 
+ 
+   .seledka .column_seledka {
+     display: block;
+     position: relative;
+     top: 5%;
+     left: 10px;
+     width: 60%;
+ }
+ 
+ .seledka .answer {
+     position: relative;
+     bottom: -190px;
+ }
+ 
+ .seledka .answer span {
+     color: brown;
+     font-weight: bold;
+     font-size: small;
+ }
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ .ice {
+     background: url('./img/ice.png') no-repeat;
+     float: left;
+ }
+ 
+ .coctail {
+     background: url('./img/coctail.png') no-repeat;
+     float: left;
+ }
+ 
+ .muss {
+     background: url('./img/muss.png') no-repeat;
+     float: left;
+ }
+ 
+ .salat {
+     background: url('./img/salat.png') no-repeat;
+     clear: left;
+     float: left;
+ }
+ 
+ .sea {
+     background: url('./img/sea.png') no-repeat;
+     float: left;
+ }
+ 
+ .seledka {
+     background: url('./img/seledka.png') no-repeat;
+     float: left;
+ }
+ 
+ @media screen and (max-width: 400px) {
+     .menu {
+         width: 400px;
+     }
+ }
+ 
+ @media screen and (max-width: 800px) {
+
+
+     }
+ 
+ @media screen and (min-width: 800px) {
+.ice,
+.coctail,
+ .muss,
+ .salat,
+ .sea,
+ .seledka {
+     transition: all 1s ease-out;
+     
+ }
+ 
+  .ice:hover, .coctail:hover,
+   .muss:hover,
+ .salat:hover,
+ .sea:hover,
+ .seledka:hover {
+     transform: scale(1.2);
+ }
+
+ 
+ }

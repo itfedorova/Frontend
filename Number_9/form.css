@@ -1,0 +1,8 @@
+        input [type="checkbox"] {
+            visibility: hidden;
+        }
+        
+        input:checked+span {
+            color: green;
+        }
+        
