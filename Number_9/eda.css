@@ -70,8 +70,6 @@
      font-size: small;
  }
  
- 
-  
  .salat .column_salat {
      display: block;
      position: relative;
@@ -91,8 +89,7 @@
      font-size: small;
  }
  
- 
-  .sea .column_sea {
+ .sea .column_sea {
      display: block;
      position: relative;
      top: 5%;
@@ -111,8 +108,7 @@
      font-size: small;
  }
  
- 
-   .seledka .column_seledka {
+ .seledka .column_seledka {
      display: block;
      position: relative;
      top: 5%;
@@ -130,13 +126,6 @@
      font-weight: bold;
      font-size: small;
  }
- 
-
- 
- 
- 
- 
- 
  
  .ice {
      background: url('./img/ice.png') no-repeat;
@@ -175,29 +164,19 @@
      }
  }
  
- @media screen and (max-width: 800px) {
-
-
-     }
+ @media screen and (max-width: 800px) {}
  
  @media screen and (min-width: 800px) {
-.ice,
-.coctail,
- .muss,
- .salat,
- .sea,
- .seledka {
-     transition: all 1s ease-out;
-     
- }
- 
-  .ice:hover, .coctail:hover,
-   .muss:hover,
- .salat:hover,
- .sea:hover,
- .seledka:hover {
-     transform: scale(1.2);
- }
-
- 
+     .ice, .coctail, .muss, .salat, .sea, .seledka {
+         transition: all 2s ease-out;
+     }
+     .ice:hover,
+     .coctail:hover,
+     .muss:hover,
+     .salat:hover,
+     .sea:hover,
+     .seledka:hover {
+         transform: scale(1.2);
+         z-index: 1000;
+     }
  }
