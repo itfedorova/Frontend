@@ -10,7 +10,7 @@
 
 .common {
     display: flex;
-    background: url('./img/ball.png') repeat-y right;
+    background: url('./img1/ball.png') repeat-y right;
 }
 
 .menu {

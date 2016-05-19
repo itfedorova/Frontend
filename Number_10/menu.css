@@ -8,21 +8,18 @@
     font-size: large;
 }
 
+
 .common a:hover {
     color: red;
 }
 
-div {
-   background: url("./img/bal.png") no-repeat;
-   background-position: 10px 40px;
-    width: 20px;
-    height: 30px;
-     }
+
     
 li {
     list-style-type: none;
     }
     
+ 
     
 .list1 ul li:first-child {
   display: block;
