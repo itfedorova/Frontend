@@ -36,15 +36,15 @@ li {
 }
  
 
-.list1 > li:last-child  {
+.list1 ul li:last-child {
   display: none;
 }
 
-.list1  li:last-child a:hover {
+
+
+.list1  ul:hover >li:last-child {
   display: block;
 }
-
-
  
 /*
 .list1 ul li:last-child {
