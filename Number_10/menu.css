@@ -23,6 +23,7 @@ li {
     list-style-type: none;
     }
     
+    
 .list1 ul li:first-child {
   display: block;
 }
@@ -31,21 +32,13 @@ li {
   display: none;
 }
 
-.list1 ul:hover li {
+.list1 ul:hover > li {
   display: block;
 }
  
 
-.list1 ul li:last-child {
-  display: none;
-}
 
 
-
-.list1  ul:hover >li:last-child {
-  display: block;
-}
- 
 /*
 .list1 ul li:last-child {
     display:none;}
