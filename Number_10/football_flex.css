@@ -1,0 +1,75 @@
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: skyblue;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.common {
+    display: flex;
+    background: url('./img/ball.png') repeat-y right;
+}
+
+.menu {
+    margin: 0;
+    font-size: 22px;
+    background-color: yellow;
+    float: left;
+}
+
+h2 {
+    padding-left: 10px;
+}
+
+.content {
+    font-size: 22px;
+    text-indent: 1em;
+    margin-left: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    clear: both;
+    background-color: skyblue;
+    padding: 1em;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        font-size: 0.7em;
+        padding: 5px;
+    }
+    .menu {
+        font-size: 0.9em;
+        float: left;
+    }
+    h1 {
+        padding-left: 5px;
+    }
+    .content {
+        font-size: 0.8em;
+        padding-left: 5px;
+        margin: 0;
+        float: none;
+    }
+    .footer {
+        text-align: center;
+        font-size: 1em;
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .menu {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,85 @@
+.common a {
+    height: 30px;
+    color: green;
+    border-right: 5px solid red;
+    width: 150px;
+    float: left;
+    padding-left: 20px;
+    font-size: large;
+}
+
+.common a:hover {
+    color: red;
+}
+
+div {
+   background: url("./img/bal.png") no-repeat;
+   background-position: 10px 40px;
+    width: 20px;
+    height: 30px;
+     }
+    
+li {
+    list-style-type: none;
+    }
+    
+.list1 ul li:first-child {
+  display: block;
+}
+
+.list1 ul li:not(:first-child) {
+  display: none;
+}
+
+.list1 ul:hover li {
+  display: block;
+}
+ 
+
+.list1 > li:last-child  {
+  display: none;
+}
+
+.list1  li:last-child a:hover {
+  display: block;
+}
+
+
+ 
+/*
+.list1 ul li:last-child {
+    display:none;}
+
+
+    
+.list1 ul li:last-child li:hover {
+  display: block;
+}
+*/
+
+ /* 
+ 
+ input[type="checkbox"] {
+    visibility:hidden;
+    }
+ 
+ option[value="1"] {
+      display:block;
+     }
+     
+form:nth-first-child {
+    display:block;
+     }
+   
+form:hover  {
+  display: block;
+ 
+}
+
+
+form:not(:first-child) {
+  display: none;
+}
+
+*/
+

@@ -24,7 +24,7 @@
     background: url('./img/ball.png') repeat-y right;
     float: left;
     font-size: 22px;
-    max-width: 75%;
+    max-width: 80%;
     text-indent: 1em;
 
 }
@@ -75,7 +75,7 @@ img {
         float:none;
          max-width: 85%;
     }
-    
+}  
 @media screen and (min-width: 800px) {
      .menu {
       font-size: 18px;

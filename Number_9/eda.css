@@ -168,7 +168,7 @@
  
  @media screen and (min-width: 800px) {
      .ice, .coctail, .muss, .salat, .sea, .seledka {
-         transition: all 2s ease-out;
+         transition: all 1s ease-out;
      }
      .ice:hover,
      .coctail:hover,
