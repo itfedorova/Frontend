@@ -1,4 +1,4 @@
-/* ------------сброс---------------------*/
+/* ---------cbros styles----------------------------*/
 
 html,
 body,
@@ -176,7 +176,7 @@ li {
 
 .nav {
     position: relative;
-    left: 33%;
+    text-align: center;
     
     width: 800px;
     margin-left: 100px;
@@ -199,7 +199,7 @@ li {
 .drop_menu {
     position: absolute;
     top: 43px;
-    left: 470.6px;
+    left: 550.6px;
     z-index: 3;
     color: #0000ff;
     background: linear-gradient(#7fff00, #ffd700);
