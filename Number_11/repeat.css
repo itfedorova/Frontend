@@ -200,7 +200,7 @@ li {
     position: absolute;
     top: 43px;
     left: 550.6px;
-    z-index: 3;
+    z-index: 300;
     color: #0000ff;
     background: linear-gradient(#7fff00, #ffd700);
     font-size: 0.9em;
@@ -286,11 +286,12 @@ h3 {
 }
 
 img {
-    display: block;
+     position: relative;
+    float: left;
     height: 400px;
     width: 33.3%;
-    position: relative;
-    float: left;
+    text-align: center;
+   
 }
 
 
@@ -302,9 +303,10 @@ img {
 .star3,
 .star4,
 .star5 {
+    display: inline-block;
     position: absolute;
-    height: 100px;
-    width: 100px;
+    height: 77px;
+    width: 77px;
 }
 
 .br p {
@@ -315,68 +317,44 @@ img {
     z-index: 100;
 }
 
+.br1 {
+    position: relative;
+    }
 
-
-.star {
+.star, .star3 {
     left: 26%;
 }
 
-.star1 {
+.star1, .star4 {
     left: 59%;
 }
 
-.star2 {
+.star2, .star5 {
     right: 1%;
 }
 
-.star3 {
-    top: 83%;
-    left: 26%;
-}
-
-.star4 {
-    top: 83%;
-    left: 59%;
-}
-
-.star5 {
-    top: 83%;
-    right: 1%;
-}
-
-
+.star3, .star4, .star5 {
+    margin-top: 400px;
+        }
+        
 /*--------------Ценник завтрак------------------------*/
 
-p.star  {
-    top: 27%;
-    left: 28%;
+
+p.star, p.star1, p.star2, 
+p.star3, p.star4, p.star5 {
+    text-align: center;
 }
 
-p.star1  {
-    top: 27%;
-    left: 60.5%;
+p.star, p.star1, p.star2 {
+    margin-top: 20px;
 }
 
-p.star2  {
-   top: 27%;
-   text-align: center;
+p.star3, p.star4, p.star5  {
+    
+    margin-top: 420px;
 }
 
-p.star3  {
-    top: 87%;
-    left: 28%;
-}
-p.star4  {
-     top: 87%;
-    left: 61%;
-}
-p.star5  {
-   top: 87%;
-   text-align: center;
-}
-
-
-
+/*----------------------end------------------------------*/
 
 .footer {
     height: 100px;
