@@ -153,13 +153,13 @@ html, body {
     background: url('./img/wp.jpg') no-repeat;
      }
   30% {
-      background-image: url('./img/wp2.jpg') no-repeat;
+      background: url('./img/wp2.jpg') no-repeat;
   }
    60% {
-      background-image: url('./img/wp1.jpg') no-repeat;
+      background: url('./img/wp1.jpg') no-repeat;
   }
     100% {
-      background-image: url('./img/wp3.jpg') no-repeat;
+      background: url('./img/wp3.jpg') no-repeat;
   }
 }
      
