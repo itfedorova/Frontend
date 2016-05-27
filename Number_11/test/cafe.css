@@ -1,0 +1,152 @@
+.nav {
+    position: relative;
+    top:5px;
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+     text-align: center;
+     font: bold 14px Arial;
+    }
+    
+    
+h1 {
+     text-align: center;
+    }
+
+.submenu div {
+  position: absolute;
+  top: 100px;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.submenu label {
+   border: solid 1px;
+   margin: -24px;
+   padding: 10px 10px 20px ;
+    }
+
+/* график работы */
+.submenu input[id="graf"]  {
+    display: inline-block;
+    position: relative;
+    top:20px;
+    left:60px;
+}   
+
+
+/* контакты */
+.submenu input[id="cont"]  {
+    display: inline-block;
+    position: relative;
+    top:20px;
+    left:50px;
+}   
+
+.submenu > input[id="graf"].active:checked ~ .grafic,
+.submenu > input[id="cont"].active:checked ~ .cont
+{
+  display: block;
+  top: 100%;
+  left: 40%;
+}
+
+.submenu > input[name="grafic"].inactive:checked ~ .grafic,
+.submenu > input[name="cont"].inactive:checked ~ .cont {
+  display: none;
+}
+
+
+
+
+
+/* Выпадающее меню    }
+
+}*/
+
+.menu {
+  position: relative;
+  top:-27px;
+  left: 188px;
+  display: inline-block;
+  height: 31px;
+  width: 100px;
+  text-align: center;
+  margin: 0;
+  padding-top: 15px;
+  border: solid 1px;
+}
+
+.nav input {
+  display: none;
+}
+.menu div {
+  position: absolute;
+  max-height: 150px;
+  overflow-y: auto;
+  width: 100%;
+}
+.menu > input.active:checked ~ div label {
+  display: block;
+}
+.menu > input.active:checked ~ div {
+  top: 100%;
+  border: solid 1px;
+ 
+}
+
+.menu > input.inactive:checked ~ div {
+  display: none;
+}
+.menu > input.inactive:checked ~ label.active {
+  opacity: 1;
+}
+.menu > input.active:checked ~ label.inactive {
+  display: block;
+}
+.menu > input.active:checked ~ label.active {
+  display: none;
+}
+.menu > label.active,
+.menu > label.inactive {
+  display: none;
+}
+.menu > label.active {
+  display: block;
+  opacity: 0;
+  z-index: 10;
+  
+}
+.menu > label {
+  position: absolute;
+  display: block;
+  width: 100%;
+}
+.menu div label {
+  display: none;
+  width: 100%;
+}
+
+.menu div input:checked + label {
+  display: block;
+  overflow: hidden;
+}
+
+
+
+
+/*div:not(.nav) {
+    display:inline-block;
+     border: solid 1px;
+    }
+    
+input[type="radio"] {
+  /*  visibility: hidden;
+    }
+    
+.menu3 form[name="menu1"] {
+    display:none;
+    } */

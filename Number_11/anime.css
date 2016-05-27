@@ -1,0 +1,29 @@
+li {
+    list-style:none;
+    padding:10px;
+    border: solid green 1px;
+    display:inline-block;
+        }
+
+.p1:hover { 
+    transform: scale(0.5) rotate(45deg);
+    
+    }
+    
+.p2:hover {
+    transform: translate(10px);
+}
+
+
+
+
+.p3 {
+  background-color:green;
+ transition-duration: 2s;
+   
+}
+
+.p3:hover {
+    background-color:blue;
+
+}

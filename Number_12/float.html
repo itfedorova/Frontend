@@ -49,20 +49,20 @@
         Применение свойства clear сдвигает элемент вниз до тех пор, пока не закончатся float'ы слева/справа/с обеих сторон.
     </div>
 <br>
-    <!--<div class="clearfix">-->
-    <!--    <div class="one" style="clear:both;">1-->
-    <!--        <div class="two" style="float:left;">2-->
-    <!--            <div class="three" style="float:right;">3</div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</div>-->
-    <!--<br>-->
-    <!--<div class="clearfix">-->
-    <!--    <div class="one" style="float:left;">1-->
-    <!--        <div class="two" style="float:left;">2</div>-->
-    <!--        <div class="three" style="float:left;">3</div>-->
-    <!--    </div>-->
-    <!--</div>-->
+    <div class="clearfix">
+        <div class="one" style="clear:both;">1
+            <div class="two" style="float:left;">2
+                <div class="three" style="float:right;">3</div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="clearfix">
+        <div class="one" style="float:left;">1
+            <div class="two" style="float:left;">2</div>
+            <div class="three" style="float:left;">3</div>
+        </div>
+    </div>
     <!--Можно 132 213 231 312 Невозможно 321 Причина:float'ы 
     сдвигаются только в сторону и дают место следующим блоками, 
     которые съезжают наверх -->

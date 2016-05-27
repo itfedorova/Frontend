@@ -1,0 +1,255 @@
+body {
+    width: 1020px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    border: solid 1px green;
+    /*background-color: #cce5cc;*/
+}
+
+
+/*---------------Логотип----------------------*/
+
+.logo {
+    display: inline-block;
+    background: url('./img/logo.png') no-repeat;
+    margin-left: 40px;
+    margin-top: 40px;
+    padding: 0;
+    width: 940px;
+    height: 48px;
+    /*border: solid 1px red;*/
+}
+
+.logo img {
+    padding: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0;
+    padding-left: 42px;
+}
+
+
+/*------------Форма поиска и регистрации---------------------*/
+
+form {
+    display: inline-block;
+    position: relative;
+    top: -45px;
+    left: 610px;
+}
+
+input [type=search] {
+    width: 440px;
+}
+
+button {
+    width: 80px;
+    height: 48px;
+}
+
+
+/*-------------Картинки под логотипом-----------------*/
+
+.undologo,
+.undologo1,
+.undologo2,
+.undologo3,
+.undologo4,
+.undologo5,
+.undologo6,
+.undologo7,
+.undologo8,
+.undologo9,
+.undologo10,
+.undologo11,
+.undologo12,
+.undologo13,
+.undologo14,
+.undologo15,
+.undologo16,
+.undologo17 {
+    height: 30px;
+}
+
+.undologo,
+.undo {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.undologo div {
+    display: inline-block;
+    margin-right: 2px;
+}
+
+.undologo2,
+.undologo4,
+.undologo6,
+.undologo8,
+.undologo10,
+.undologo12,
+.undologo14,
+.undologo16 {
+    width: 28px;
+    background: url('./img/bbc.png') no-repeat;
+}
+
+.undologo1 {
+    width: 40px;
+    background: url('./img/line.png') repeat-x;
+    background-position: center;
+    margin-left: 10px;
+}
+
+.undologo2 {
+    background-position: -12px 0;
+}
+
+.undologo3,
+.undologo5,
+.undologo7,
+.undologo9,
+.undologo11,
+.undologo13,
+.undologo15 {
+    width: 80px;
+    background: url('./img/line.png') repeat-x;
+    background-position: center;
+    margin-right: 2px;
+}
+
+.undologo4 {
+    background-position: -47px 0;
+}
+
+.undologo6 {
+    background-position: -77px 0;
+}
+
+.undologo8 {
+    background-position: -110px 0;
+}
+
+.undologo10 {
+    background-position: -140px 0;
+}
+
+.undologo12 {
+    background-position: -177px 0;
+}
+
+.undologo14 {
+    background-position: -215px 0;
+}
+
+.undologo16 {
+    background-position: -245px 0;
+}
+
+.undologo17 {
+    width: 40px;
+    background: url('./img/line.png') repeat-x;
+    background-position: center;
+}
+
+.undologo span {
+    display: block;
+    background-position: bottom;
+}
+
+.undo {
+    height: 20px;
+    }
+.undo li {
+    display: inline-block;
+    list-style: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 59px;
+}
+
+.undo li:nth-last-child {
+    margin-right: 0;
+}
+
+.undo li:not(:first-child) a {
+    text-decoration: none;
+    color: #777;
+}
+.undo li:first-child a {
+    text-decoration: none;
+    color: #fdcc05;
+    }
+
+.undo li a:hover {
+    color: #fdcc05;
+}
+
+
+
+/*------------------------Навигация.Меню--------------------*/
+
+.menu {
+    width: 160px;
+    height: 374px;
+    margin-left: 40px;
+    margin-top: 80px;
+}
+
+.menu button {
+    display: inline-block;
+    height: 70px;
+    width: 78px;
+    border: 1px solid #eee;
+    font-size: 10px;
+    font-weight: bolder;
+    color: #777;
+    text-align: center;
+}
+
+.menu button:not(.one) {
+    background-color: #fff;
+}
+
+button img {
+    padding-bottom: 10px;
+}
+
+.one {
+    background-color: #555;
+}
+
+.one span {
+    color: #fff;
+}
+
+.menu button:nth-child(even) {
+    float: right;
+}
+
+.menu button:not(.one):not(.two) {
+    margin-top: 4px;
+}
+
+.menu button:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+
+/*------------------Горизонтальная навигаци----------------------*/
+
+.navig li {
+    display: inline-block;
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+}

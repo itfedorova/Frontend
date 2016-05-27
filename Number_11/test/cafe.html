@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Restoran</title>
+    <link rel="stylesheet" href="cafe.css" type="text/css" /> </head>
+
+<body>
+    <h1>Добро пожаловать!</h1>
+    <div class="nav">
+        <div class="submenu">
+            <input class="inactive" type="radio" name="grafic" id="graf" value="0" checked/>
+            <input class="active" type="radio" name="grafic" id="graf" value="0" />
+            <label for="graf">График работы</label>
+        <div class="grafic">
+                <h2>График работы</h2>
+                <br>
+                <p><strong>Время работы:</strong>
+                    <br> с воскресенья по четверг: 12:00 - 00:00
+                    <br> с пятницы по субботу: 12:00 - 01:00
+            </div>
+
+            <input class="active" type="radio" name="cont" id="cont" value="1" />
+            <input class="inactive" type="radio" name="cont" id="cont" value="1" checked/>
+            <label for="cont">Контакты</label>
+            <div class="cont">
+            <p><strong>АДРЕС:</strong>
+<br>г. Минск, ул. Кульман, 40
+<br><strong>ТЕЛЕФОНЫ:</strong>
+<br>+375 (29) 396 58 58
+<br>+375 (33) 636 58 58
+<br>+375 (17) 396 58 58
+<br><strong>Банкетный менеджер:</strong>+375 (44) 595 49 72
+<br><strong>e-mail:</strong> banket@druzya.by
+<br><strong>Караоке:</strong> +375 (29) 338 58 58
+<br><strong>e-mail:</strong> karaoke@druzya.by.
+</p>
+            </div>
+        </div>
+        <div class="menu">
+
+            <input class="active" type="radio" name="menu" id="active" value="2" />
+            <input class="inactive" type="radio" name="menu" id="inactive" value="2" checked/>
+            <label class="active" for="active">Меню</label>
+            <label class="inactive" for="inactive">Меню</label>
+
+            <div>
+                <input type="radio" name="menu" id="list-menu1" value="3" />
+                <label for="list-menu1">Завтрак</label>
+                <input type="radio" name="menu" id="list-menu2" value="4" />
+                <label for="list-menu2">Обед</label>
+                <input type="radio" name="menu" id="list-menu3" value="5" />
+                <label for="list-menu3">Ужин</label>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

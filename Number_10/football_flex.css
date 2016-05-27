@@ -1,3 +1,7 @@
+body {
+    background-image: url('cream_dust.png');
+    }
+
 .header {
     display: flex;
     justify-content: center;
@@ -17,7 +21,7 @@
     margin: 0;
     font-size: 22px;
     background-color: yellow;
-    float: left;
+    padding-right: 10px;
 }
 
 h2 {
@@ -36,7 +40,7 @@ h2 {
     clear: both;
     background-color: skyblue;
     padding: 1em;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
 }

@@ -1,0 +1,418 @@
+/* ------------сброс---------------------*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*vertical-align: baseline;*/
+    box-sizing: border-box;
+}
+
+html, body {
+    min-width:100% ;
+    }
+/*-------------------Пять звезд-------------------------*/
+
+#stars span {
+  display: inline-block;
+  transform: scale(1);
+  transition: transform 2s cubic-bezier(0, 1, 0, 1);
+}
+#stars span:hover {
+  cursor: crosshair;
+  transform: scale(1.3); /*  a hover effect */
+  transition: transform .2s cubic-bezier(0, 0.75, 0, 1);
+}
+#stars span:active {
+  text-shadow: none; 
+}
+
+#stars span:nth-child(1), #stars span:nth-child(5) { font-size: 0.8em; animation-delay: 0.2s; }
+#stars span:nth-child(2), #stars span:nth-child(4) { font-size: 1em; animation-delay: 0.1s; }
+#stars span:nth-child(3) { font-size: 1.2em; animation-delay: 0s; }
+
+#stars span { animation: stars-animation 3s 50 ease-in-out; }
+
+@-webkit-keyframes stars-animation {
+  0% { transform: scale(1); }
+  90% { transform: scale(1); }
+  95% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+#stars:hover span {
+  animation: none; 
+}
+
+/*----------end--------Пять звезд-----------end--------------*/
+
+
+.bott {
+    display: block;
+    height: 140px;
+    min-width: 100%;
+    background-color: #eeeeee;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 5px;
+    padding: 20px;
+}
+
+.content {
+    display: block;
+    float: left;
+    min-height: 880px;
+    min-width: 100%;
+    animation: pulse 25s infinite;
+}
+
+/*----------------------------Анимация-------------------*/
+
+@keyframes pulse {
+  0% {
+    background: url('./img/wp.jpg') no-repeat;
+     }
+  30% {
+      background-image: url('./img/wp2.jpg') no-repeat;
+  }
+   60% {
+      background-image: url('./img/wp1.jpg') no-repeat;
+  }
+    100% {
+      background-image: url('./img/wp3.jpg') no-repeat;
+  }
+}
+     
+/*--------------------навигация-------------------------------*/
+
+input[type="radio"] {
+    visibility: hidden;
+    
+}
+
+li {
+    list-style: none;
+}
+
+.nav {
+    position: relative;
+    left: 33%;
+    
+    width: 800px;
+    margin-left: 100px;
+  
+}
+
+.nav li {
+    font-family: 'Lobster', cursive;
+    font-size: 1.2em;
+    color: #0000ff;
+    display: inline-block;
+    padding: 10px 60px;
+    border: solid 1px grey;
+    background: linear-gradient(#7fff00, #ffd700);
+}
+
+
+/*---------------Выпадающее меню-------------------*/
+
+.drop_menu {
+    position: absolute;
+    top: 43px;
+    left: 470.6px;
+    z-index: 3;
+    color: #0000ff;
+    background: linear-gradient(#7fff00, #ffd700);
+    font-size: 0.9em;
+}
+
+.drop_menu li {
+    display: none;
+}
+
+.menu:hover .drop_menu li {
+    display: block;
+    padding: 8px 44px;
+    border: solid 1px grey;
+    }
+
+.job,
+.contacts {
+    padding: 5%;
+    width:100%;
+}
+
+
+/*------------------------График работы------------------------------*/
+
+.job {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 1.5em;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 5px;
+}
+
+h2 {
+    color: blue;
+}
+
+.job {
+    display: none;
+}
+
+#grafic:checked ~ .job {
+    display: block;
+    background: linear-gradient(#7fff00, #ffd700);
+    
+}
+
+
+/*-----------------Контакты------------------------------*/
+
+.contacts {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 1.5em;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 5px;
+}
+
+h3 {
+    color: #7fff00;
+}
+
+.contacts {
+    display: none;
+}
+
+#contact:checked ~ .contacts {
+    display: block;
+    background: linear-gradient(#1919ff, #ffd700);
+}
+
+/*--------------Горизонтальное Меню-----------------------*/
+
+.br,
+.dn,
+.sp {
+    display: none;
+}
+
+#menu-br:checked ~ .br {
+    display: block;
+    margin-top: 1%;
+   
+}
+
+img {
+    display: block;
+    height: 400px;
+    width: 33.3%;
+    position: relative;
+    float: left;
+}
+
+
+/*------------Звезды-ценники завтрак---------------*/
+
+.star,
+.star1,
+.star2,
+.star3,
+.star4,
+.star5 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+
+.br p {
+    position: absolute;
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    color: #ff0000;
+    z-index: 100;
+}
+
+
+
+.star {
+    left: 26%;
+}
+
+.star1 {
+    left: 59%;
+}
+
+.star2 {
+    right: 1%;
+}
+
+.star3 {
+    top: 83%;
+    left: 26%;
+}
+
+.star4 {
+    top: 83%;
+    left: 59%;
+}
+
+.star5 {
+    top: 83%;
+    right: 1%;
+}
+
+
+/*--------------Ценник завтрак------------------------*/
+
+p.star  {
+    top: 27%;
+    left: 28%;
+}
+
+p.star1  {
+    top: 27%;
+    left: 60.5%;
+}
+
+p.star2  {
+   top: 27%;
+   text-align: center;
+}
+
+p.star3  {
+    top: 87%;
+    left: 28%;
+}
+p.star4  {
+     top: 87%;
+    left: 61%;
+}
+p.star5  {
+   top: 87%;
+   text-align: center;
+}
+
+
+
+
+.footer {
+    height: 100px;
+    min-width: 100%;
+    background-color: #eeeeee;
+    clear: both;
+}
+
+.footer p {
+    font-size: 1.2em;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    
+    .bott {
+        font-size: 1em;
+        }
+    
+    .nav li {
+             width: 250px;
+         }
+ 
+         .drop li {
+             width: 250px;
+         }
+ 
+        /*.menu:hover .drop_menu li  {*/
+        /*    width: 250px;*/
+        /*    position: absolute;*/
+            
+        /*    }*/
+    
+    }

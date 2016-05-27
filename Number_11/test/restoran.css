@@ -1,0 +1,92 @@
+body {
+    background-image: linear-gradient(#cfcfe4,#13137c);
+    width: 100%;
+    
+}
+
+.header {
+     text-align: center;
+    }
+
+a {
+    text-decoration: none;
+}
+
+ul.nav li {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    height: 30px;
+    background-image: linear-gradient(#D2B48C,#FFD700);
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+ul.nav,
+ul.dropdown_menu {
+    list-style: none;
+    padding: 0;
+ 
+}
+
+ul.dropdown_menu {
+    position: absolute;
+    top: 100%;
+}
+
+.dropdown_menu {
+    display: none;
+}
+
+li:hover .dropdown_menu {
+    display: block;
+    
+}
+
+/* ссылка на График работы */
+.graf a:active {
+     background-image: linear-gradient(#D2B48C,#FFD700);
+    }
+
+
+.common {
+    background: url('./img/clock.jpg') no-repeat;
+    width: 1366px;
+    height: 768px;
+    margin: 0 auto;
+    }
+
+.footer {
+    height: 40px;
+    width: 100%;
+    clear: both;
+    }
+
+/*
+
+
+text-decoration: none;
+
+           margin: 0px auto;
+           
+           
+           
+button[name="menu1"],
+button[name="menu2"],
+button[name="menu3"] {
+    display: none;
+    }
+
+ul:active  {
+    display: block;
+    }
+       button {
+     margin-top: 1.8em; 
+     padding: 10px 40px;
+    
+      
+    }
+    
+button:active {
+   background-image: linear-gradient(#bda27e,#b29600);
+        } */
