@@ -126,7 +126,7 @@ html, body {
 /*----------end--------Пять звезд-----------end--------------*/
 
 
-.bott {
+.header {
     display: block;
     height: 140px;
     min-width: 100%;
@@ -377,6 +377,7 @@ p.star3, p.star4, p.star5  {
     
     .bott {
         font-size: 1em;
+        
         }
     
     .nav li {
