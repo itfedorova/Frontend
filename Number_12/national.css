@@ -1,11 +1,14 @@
+/**:not(html) {
+	border:solid green 1px;
+}*/
+
 body {
-    width: 1020px;
-    height: 100%;
+    position: relative;
+    width: 1000px;
+    height: 1394px;
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    border: solid 1px green;
-    /*background-color: #cce5cc;*/
 }
 
 
@@ -19,7 +22,6 @@ body {
     padding: 0;
     width: 940px;
     height: 48px;
-    /*border: solid 1px red;*/
 }
 
 .logo img {
@@ -39,8 +41,8 @@ h1 {
 form {
     display: inline-block;
     position: relative;
-    top: -45px;
-    left: 610px;
+    top: -49px;
+    left: 596px;
 }
 
 input [type=search] {
@@ -52,126 +54,139 @@ button {
     height: 48px;
 }
 
+.map {
+    height: 80px;
+    width: 100%;
+}
+
 
 /*-------------Картинки под логотипом-----------------*/
 
-.undologo,
-.undologo1,
-.undologo2,
-.undologo3,
-.undologo4,
-.undologo5,
-.undologo6,
-.undologo7,
-.undologo8,
-.undologo9,
-.undologo10,
-.undologo11,
-.undologo12,
-.undologo13,
-.undologo14,
-.undologo15,
-.undologo16,
-.undologo17 {
+.map,
+.map1,
+.map2,
+.map3,
+.map4,
+.map5,
+.map6,
+.map7,
+.map8,
+.map9,
+.map10,
+.map11,
+.map12,
+.map13,
+.map14,
+.map15,
+.map16,
+.map17 {
     height: 30px;
+    margin-top: 0;
 }
 
-.undologo,
+.map,
 .undo {
-    width: 980px;
-    margin: 0 auto;
+    width: 940px;
 }
 
-.undologo div {
+.map {
+    margin: 0 40px;
+}
+
+.undo {
+    margin: 0 -5px;
+}
+
+.map div {
     display: inline-block;
-    margin-right: 2px;
+    margin: 0;
 }
 
-.undologo2,
-.undologo4,
-.undologo6,
-.undologo8,
-.undologo10,
-.undologo12,
-.undologo14,
-.undologo16 {
-    width: 28px;
+.map2,
+.map4,
+.map6,
+.map8,
+.map10,
+.map12,
+.map14,
+.map16 {
+    width: 26px;
     background: url('./img/bbc.png') no-repeat;
 }
 
-.undologo1 {
+.map1 {
     width: 40px;
     background: url('./img/line.png') repeat-x;
     background-position: center;
     margin-left: 10px;
 }
 
-.undologo2 {
+.map2 {
     background-position: -12px 0;
 }
 
-.undologo3,
-.undologo5,
-.undologo7,
-.undologo9,
-.undologo11,
-.undologo13,
-.undologo15 {
-    width: 80px;
+.map3,
+.map5,
+.map7,
+.map9,
+.map11,
+.map13,
+.map15 {
+    width: 78px;
     background: url('./img/line.png') repeat-x;
     background-position: center;
     margin-right: 2px;
 }
 
-.undologo4 {
+.map4 {
     background-position: -47px 0;
 }
 
-.undologo6 {
+.map6 {
     background-position: -77px 0;
 }
 
-.undologo8 {
+.map8 {
     background-position: -110px 0;
 }
 
-.undologo10 {
+.map10 {
     background-position: -140px 0;
 }
 
-.undologo12 {
+.map12 {
     background-position: -177px 0;
 }
 
-.undologo14 {
+.map14 {
     background-position: -215px 0;
 }
 
-.undologo16 {
+.map16 {
     background-position: -245px 0;
 }
 
-.undologo17 {
-    width: 40px;
+.map17 {
+    width: 44px;
     background: url('./img/line.png') repeat-x;
     background-position: center;
 }
 
-.undologo span {
-    display: block;
+.map span {
+    display: inline-block;
     background-position: bottom;
 }
 
 .undo {
     height: 20px;
-    }
+}
+
 .undo li {
     display: inline-block;
     list-style: none;
     font-size: 12px;
     font-weight: bold;
-    margin-left: 10px;
-    margin-right: 59px;
+    margin-right: 63px;
 }
 
 .undo li:nth-last-child {
@@ -182,24 +197,30 @@ button {
     text-decoration: none;
     color: #777;
 }
+
 .undo li:first-child a {
     text-decoration: none;
     color: #fdcc05;
-    }
+}
 
 .undo li a:hover {
     color: #fdcc05;
 }
 
+.menu,
+.center {
+    margin-top: 50px;
+}
 
 
 /*------------------------Навигация.Меню--------------------*/
 
 .menu {
+    display: inline-block;
     width: 160px;
     height: 374px;
     margin-left: 40px;
-    margin-top: 80px;
+    float: left;
 }
 
 .menu button {
@@ -243,13 +264,127 @@ button img {
 }
 
 
-/*------------------Горизонтальная навигаци----------------------*/
+/*-------------------end---------------------------*/
 
-.navig li {
+.center {
+    display: inline-block;
+    height: 374px;
+    width: 538px;
+    background: url(img/gepard.png) no-repeat;
+    background-position: center;
+    border-right-color: #ddd;
+    border-right-style: solid;
+    border-right-width: 1px;
+}
+
+
+/*--------------------навигация центр-----------------*/
+
+.nav ul {
+    padding-left: 0;
+    margin-left: 14px;
+}
+
+.nav li {
     display: inline-block;
     list-style: none;
+    margin-left: 2px;
+}
+
+.nav li a {
+    border: 1px solid #eee;
+    color: #555;
+    text-decoration: none;
+    padding: 10px 13px;
+}
+
+.nav li a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.bok {
+    position: absolute;
+    top: 220px;
+    right: 0;
+    height: 890px;
+    width: 235px;
+    margin-top: -18px;
+    margin-right: 10px;
+}
+
+
+/*----------------Карта контент---------------*/
+
+.karta {
+    height: 510px;
+    width: 700px;
+    margin-left: 40px;
+}
+
+.karta1,
+.karta2,
+.karta3,
+.karta4 {
+    display: inline-block;
+    width: 340px;
+    height: 240px;
+    border: solid 1px #ddd;
+}
+
+.karta2,
+.karta4 {
+    float: right;
+}
+
+.karta3,
+.karta4 {
+    margin-top: 12px;
+}
+
+h2,
+h3 {
+    position: relative;
+}
+
+h2 {
+    font-size: 14px;
+    text-indent: 10px;
+    color: #555;
+    top: 100px;
+}
+
+h3 {
+    font-size: 10px;
+    text-indent: 10px;
+    color: #888;
+    top: 86px;
+}
+
+.karta1 {
+    background: url(img/lion.png) no-repeat;
+    background-position: center 10px;
+}
+
+.karta2 {
+    background: url(img/gorila.png) no-repeat;
+    background-position: center 10px;
+}
+
+.karta3 {
+    background: url(img/pingvin.png) no-repeat;
+    background-position: center 10px;
+}
+
+.karta4 {
+    background: url(img/shake.png) no-repeat;
+    background-position: center 10px;
 }
 
 .clear {
     clear: both;
+}
+
+.footer {
+    height: 70px;
 }
