@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+        var S = prompt('Введите ваш возраст:');
+        while (true) {
+            var N = parseInt(S);
+            if (!isNaN(N))
+                break; // введено корректное число - выходим из цикла
+            S = prompt('Введите ваш возраст корректно:');
+        }
+
+        console.log('Возраст: ' + N + ' лет');
+    </script>
+</body>
+
+</html>
