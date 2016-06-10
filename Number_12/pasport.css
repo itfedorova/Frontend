@@ -1,15 +1,21 @@
 .main {
-    height: 340px;
-    width: 472px;
+    height: 310px;
+    width: 480px;
     border: 1px solid #777;
+    background-image: url(img/confectionary.png);
 }
 
 .foto {
     float: left;
     margin-left: 15px;
-    height: 204px;
+    height: 190px;
     width: 132px;
-    border: 1px solid #777;
+ 
+}
+
+img {
+    margin-top: 14px;
+    width: 132px;
 }
 
 h1,
@@ -30,44 +36,67 @@ h2 {
     width: 100px;
 }
 
-span {
+.content span {
     font-size: 6px;
+    padding-top: 2px;
 }
 
-.content strong {
+.content strong,
+p {
     font-size: 10px;
     font-family: Arial;
+    padding-left: 5px;
 }
 
 span:nth-child(1),
 span:nth-child(2),
-span:nth-child(3) {
+span:nth-child(3),
+span:nth-child(7),
+span:nth-child(8),
+span:nth-child(9),
+span:nth-child(10),
+span:nth-child(11),
+span:nth-child(12) {
     display: inline-block;
     text-align: center;
 }
 
 span:nth-child(1),
-span:nth-child(2) {
+span:nth-child(2),
+span:nth-child(10) {
     padding-right: 26px;
 }
 
 span:nth-child(4),
 span:nth-child(5),
-span:nth-child(6) {
-    display: block
+span:nth-child(6),
+span:nth-last-child(1) {
+    display: block;
+}
+
+span:nth-child(8),
+span:nth-child(10),
+span:nth-child(12) {
+    margin-left: 48px;
 }
 
 .content {
     float: right;
-    height: 204px;
+    height: 190px;
     width: 64%;
-    border: 1px solid red;
     margin-right: 15px;
 }
 
 .footer {
     clear: both;
-    height: 103px;
-    border: 1px solid #777;
-    margin-top: 10px;
+    height: 88px;
+    border-top: 1px solid #c3c3c3;
+    background-color: #fff;
+}
+
+p {
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 10px;
+    letter-spacing: 2px;
 }
