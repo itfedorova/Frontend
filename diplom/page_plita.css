@@ -1,0 +1,235 @@
+ body {
+ 	background-image:url('img/rockywall.png');
+ 	box-sizing: border-box; 
+ 	margin: 0;
+ 	padding: 0;
+ 	font-family: Geneva, Arial, Helvetica, sans-serif;
+ }
+
+ h1 {
+
+ 	float:left;
+ 	font-size:3em;
+ 	padding: 3% 0 0 18%;
+
+ 	text-shadow: 0 5px 35px rgba(57,57,57,0.5);
+ 	-webkit-text-shadow: 0 5px 35px rgba(57,57,57,0.5);
+ 	-moz-text-shadow:0 5px 35px rgba(57,57,57,0.5);
+
+
+ }
+ .header	{
+ 	height: 247px;
+ 	width: 100%;
+ }
+
+ .main {
+ 	background-color:#417282;
+ 	height: 247px;
+ 	width: 100%;
+ }
+
+ .plita {
+ 	background: url('img/page_plita.png') no-repeat;
+ 	background-position:center right;
+ 	float: right;
+ 	height: 247px;
+ 	width: 420px;
+ }
+
+ /*--------------------Хлебные крошки------------*/
+
+ .menu li {
+ 	margin: 0;
+ 	padding: 0;
+ 	list-style: none;
+ }
+
+ #breadcrumbs-two {
+ 	overflow: hidden;
+ 	margin: 1% 0 1% 25%; 
+ }
+ 
+ #breadcrumbs-two li{
+ 	float: left;
+ 	margin: 0 .5em 0 1em;
+ }
+ 
+ #breadcrumbs-two a{
+ 	background: #b1cccd;
+ 	padding: .7em 1em;
+ 	float: left;
+ 	text-decoration: none;
+ 	color: #444;
+ 	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+ 	position: relative;
+ }
+ 
+ #breadcrumbs-two a:hover{
+ 	background: 	#e6d273;
+ }
+ 
+ #breadcrumbs-two a::before{
+ 	content: "";
+ 	position: absolute;
+ 	top: 50%;
+ 	margin-top: -1.5em;
+ 	border-width: 1.5em 0 1.5em 1em;
+ 	border-style: solid;
+ 	border-color: #b1cccd #b1cccd #b1cccd transparent;
+ 	left: -1em;
+ }
+ 
+ #breadcrumbs-two a:hover::before{
+ 	border-color: #e6d273 #e6d273 #e6d273 transparent;
+ }
+ 
+ #breadcrumbs-two a::after{
+ 	content: "";
+ 	position: absolute;
+ 	top: 50%;
+ 	margin-top: -1.5em;
+ 	border-top: 1.5em solid transparent;
+ 	border-bottom: 1.5em solid transparent;
+ 	border-left: 1em solid #b1cccd;
+ 	right: -1em;
+ }
+ 
+ #breadcrumbs-two a:hover::after{
+ 	border-left-color: #e6d273;
+ }
+ 
+ #breadcrumbs-two .current,
+ #breadcrumbs-two .current:hover{
+ 	font-weight: bold;
+ 	background: none;
+ }
+ 
+ #breadcrumbs-two .current::after,
+ #breadcrumbs-two .current::before{
+ 	content: normal;
+ }
+
+ /*-------------end-------Хлебные крошки-------end-----*/
+
+
+ .content	{
+ 	box-sizing: border-box;  
+ 	height: 1010px;
+ 	width: 100%;
+
+ }
+ h2 {
+ 	padding-top: 12%;
+ 	text-align: center;
+ }
+ h3 {
+ 	font-size: 2.5em;
+ 	margin: 40% 0;
+ 	text-align:center;
+ }
+
+ strong {
+ 	color:#c92434;
+ }
+
+ .content ul {
+ 	margin-left: 4%;
+ 	/*list-style-image: linear-gradient( #c92434 50%, #FFB214 50%);*/
+ list-style:square;
+ }
+
+ /* --------- Оформить заказ  ---------*/
+
+ .content a {  
+ 	border: 2px solid #cfbd67;
+
+ 	border-radius: 20px;
+ 	-moz-border-radius: 20px;
+ 	-webkit-border-radius: 20px;
+ 	-o-border-radius: 20px;
+
+ 	background-color:#e6d273;
+ 	color:#264f50;
+ 	padding: 5px 20px;
+ 	text-decoration:none;
+ 	position: relative;
+ 	top:-100px;
+ 	left:95px;
+ }
+
+ /* ----end----- Оформить заказ -----end ---*/
+
+ .block_circle p{
+ 	font-size: .8em;
+ }
+
+ .block_content {
+ 	box-shadow: 0 5px 35px rgba(57,57,57,0.5);
+ 	-webkit-box-shadow: 0 5px 35px rgba(57,57,57,0.5);
+ 	-moz-box-shadow:0 5px 35px rgba(57,57,57,0.5);
+
+ 	border-left: 4px solid #264f50;
+ 	border-right: 4px solid #264f50;
+ 	border-top: 4px solid #264f50;
+ 	margin: 0 auto;
+ 	height: 500px;
+ 	position: relative;
+ 	width: 1000px;
+ }
+
+ .block_content:last-child {
+ 	border-bottom: 4px solid #264f50;
+ }
+
+ .block, .block_circle {
+
+ 	
+ 	box-sizing: border-box;
+ 	height: 500px;
+ 	width: 500px;
+ }
+
+ .block {
+ 	border-right:4px solid #264f50;
+ 	float: left;
+ }
+ 
+ .block_circle{
+ 	float: right;
+ }
+
+
+
+ .circle {
+ 	border: 4px solid #264f50;
+
+ 	box-shadow: 0 0 25px rgba(57,57,57,0.5);
+ 	-webkit-box-shadow: 0 0 25px rgba(57,57,57,0.5);
+ 	-moz-box-shadow:0 0 25px rgba(57,57,57,0.5);
+
+ 	border-radius: 200px;
+ 	-moz-border-radius: 200px;
+ 	-webkit-border-radius: 200px;
+ 	-o-border-radius: 200px;
+
+ 	height: 300px;
+ 	margin: 100px auto;
+
+ 	width: 300px;
+ }
+ .both p {
+
+ 	font-size: 1em;
+ 	font-weight: bolder;
+ 	padding: 1% 0 0 6%;
+ 	margin: 0;
+ 	height: 30px;
+ 	/*width: 100%;*/
+ }
+
+ .footer{
+ 	background-color:#417282;
+ 	height: 60px;
+ 	width: 100%;
+ }

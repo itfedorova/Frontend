@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script type="text/javascript">
+    //Случайное целое число в диапазоне, включая минимальное и максимальное.
+    //function getRandomInRange(min, max) {
+    //return Math.floor(Math.random() * (max - min + 1)) + min;
+    // }
+    // alert(getRandomInRange(10, -10));
+    
+    // Пишем страничку, которая запрашивает у нас строку через promt и выводит сообщение,
+    //является ли введенная строка палиндромом. 
+    
+// var str=prompt("Введите фразу для проверки","");
+function palindrome(str) {
+// Good luck!
+var revers = str.split("").reverse().join("").toLowerCase().replace(/\W/g, '').replace("_","");
+
+var actualStr =str.toLowerCase().replace(/\W/g, '').replace("_","");
+
+console.log(revers +" : "+actualStr);
+if(revers === actualStr)
+{return true;}
+else{return false;}
+}
+
+alert(palindrome('Ах, топор? - Ропот! -Ха!'));
+
+      
+  //   document.write(myPoly + "это Полиндром");
+  // } else {
+
+  //   document.write(myPoly + "это НЕ Полиндром");
+  // }
+  //   } 
+    // alert(palindrome(myPoly));
+    
+  </script>
+
+
+
+
+</body>
+
+</html>
