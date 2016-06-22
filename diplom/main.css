@@ -1,45 +1,45 @@
- body {
-  box-sizing: border-box;  
-  margin: 0;
-  padding: 0;
-  font-family: Geneva, Arial, Helvetica, sans-serif;
-}
+ body {  
+ 	margin: 0;
+ 	padding: 0;
+ 	font-family: Geneva, Arial, Helvetica, sans-serif;  
+ 	box-sizing: border-box;
+ }
 
-.main_master {
-  /*background-color:#ffce02;*/
-  background-image: radial-gradient(at top right, #feea9a, #ffce02);
-  background-image:  -o-radial-gradient(at top right, #feea9a, #ffce02);
-  background-image: -webkit-radial-gradient(at top right, #feea9a,  #ffce02);
-  
-  height: 500px;
-  width: 100%;
-}
+ .main_master {
+ 	/*background-color:#ffce02;*/
+ 	background-image: radial-gradient(at top right, #feea9a, #ffce02);
+ 	background-image:  -o-radial-gradient(at top right, #feea9a, #ffce02);
+ 	background-image: -webkit-radial-gradient(at top right, #feea9a,  #ffce02);
 
-.master { 
-  background: url('img/maket_main3.png') no-repeat;
-  height: 296px;
-  width:450px;
-  float: right; 
-}
+ 	height: 500px;
+ 	width: 100%;
+ }
 
-.main {
-  height: 460px;
-  width: 64%;
-}
+ .master { 
+ 	background: url('img/maket_main3.png') no-repeat;
+ 	height: 296px;
+ 	width:450px;
+ 	float: right; 
+ }
 
-h1 {
-  color: #393f40;
-  font-size: 3.2em;
-  margin-top: 0;
-  padding-top:7%;
-  text-align: center;
-  
-}
-strong {
-  color:#f05131;
-}
+ .main {
+ 	height: 460px;
+ 	width: 64%;
+ }
 
-/*---------------------Кнопка "Дать Задание"-----------------------*/
+ h1 {
+ 	color: #393f40;
+ 	font-size: 3.2em;
+ 	margin-top: 0;
+ 	padding-top:7%;
+ 	text-align: center;
+
+ }
+ strong {
+ 	color:#f05131;
+ }
+
+ /*---------------------Кнопка "Дать Задание"-----------------------*/
 
 /*.button_a a {
 
@@ -51,193 +51,324 @@ strong {
 }
 */
 
-h1{
- text-shadow: 0 4px 10px rgba(0,0,0,0.4);
- -webkit-text-shadow:0 4px 10px rgba(0,0,0,0.4);
- -moz-text-shadow:0 4px 10px rgba(0,0,0,0.4);
+h1 {
+	text-shadow: 0 4px 10px rgba(0,0,0,0.4);
+	-webkit-text-shadow:0 4px 10px rgba(0,0,0,0.4);
+	-moz-text-shadow:0 4px 10px rgba(0,0,0,0.4);
 }
 
 .content_1, .content_2, .content_3 {
-  height: 500px;
-  width: 100%;
+	height: 400px;
+	width: 100%;
 }
 
 
 h2 {
-  color: #393a2f;
-  font-size: 20px;
-  margin: 5px;
-  text-align: center;
-  text-transform: uppercase;
+	color: #393a2f;
+	font-size: 1.2em;
+	margin: 5px;
+	text-align: center;
+	text-transform: uppercase;
 }
 
-/*.button_a {
-  background-color: #19721d;
-  border-top-left-radius: 160px;
-  border-top-right-radius: 160px;
-
-  box-shadow: 0 5px 35px rgba(0,0,0,0.5);
-  -moz-box-shadow:0 5px 35px rgba(0,0,0,0.5);
-
-  height: 100px;
-  padding:10px 35px 0 35px;
-  position: relative;
-  left: 46%;
-  top: -100px;
-  -webkit-box-shadow: 0 5px 35px rgba(0,0,0,0.5);
-
-  }*/
-
-  .button_1 {             /*О нас*/
-    border-radius: 50px;
-    left: 43%;
-    padding: 0 90px;
-    position: absolute;
-    top:560px;
+.button_1 {             /*----------О нас------------*/
+	border-radius: 50px;
+	left: 43%;
+	padding: 0 90px;
+	position: absolute;
+	top:560px;
 
 
-  }
-
-  .button_1,.button_2 {
-   background-color: #fef628;
-   box-shadow: 0 5px 35px rgba(255,206,0,0.3);
-   -webkit-box-shadow: 0 5px 35px rgba(255,206,0,0.3);
-   -moz-box-shadow:0 5px 35px rgba(255,206,0,0.3);
-
- }
-
- .button_2 {    /*Наши преимущества*/
-  border-radius: 50px;
-  padding: 0 50px;
-  position: relative;
-  left: 42%; 
-  top:100px;
-  
 }
 
-.logo {
+.button_1,.button_2,.button_3 {
 
-  background: url('img/plitka_sprite.png') no-repeat;
-  background-position: -350px -450px;
-  height: 200px;
-  float: left;
-  margin-left: 5%;
-  width: 250px;
+	background-color: #fef628;
+	border-radius: 50px;
+	box-shadow: 0 5px 35px rgba(255,206,0,0.3);
+	-webkit-box-shadow: 0 5px 35px rgba(255,206,0,0.3);
+	-moz-box-shadow:0 5px 35px rgba(255,206,0,0.3);
+
 }
 
+.content_1{
+	display: inline-block;
+}
+  .content_1 span {  
+  	text-align: justify;  
+  	letter-spacing: 0.03em;  
+  	font-weight: bolder;  
+  	font-size: 1.3em;  
+  	color: #48493b;
+   }
 
+.logotip {
+	background: url('img/plitka_sprite.png') no-repeat;
+	background-position: -360px -466px;
+	height: 180px;
+	margin: -2% auto 0;
+	width: 240px;
+
+
+
+}
 .content_1 p {
-  color:#48493b;
-  font-size: 1.3em;
-  font-weight: bolder;
-  margin: 0;
-  letter-spacing: 0.03em;
-  text-align: justify;
-  padding:0 5% 0 23%;
-
+	color:#48493b;
+	letter-spacing:0.03em;
+	font-weight:bolder;
+	font-size:1.3em;
+	padding:0 5% ;
+	text-align:justify;
 }
 
 
+.button_2 {    /*---------Наши преимущества-----------*/
+	left: 40%; 
+	padding: 0 50px;
+	position: relative;
+	top:100px;
+}
 
 .content_2 {
-  background-color:#606566;
-  padding-top: 10%;
-
+	background-color:#606566;
+	padding-top:8%;
 }
 
 .content_2 p {
-  color:#fed94d;
-  font-size: 1.6em; 
-  font-weight: bolder;
-  padding-right: 5%;
-  text-align: justify;
+	color:#fff;
+	font-size: 1.2em;
 }
 
-.content_2 ul{
-  padding-left: 5%;
+.content_2 div {
+	display: inline-block;
+	float: left;
+	margin-left: 3%;
+	margin-top: 2%;
+	text-align: justify;
+	width: 45%;
+
 }
-.content_3 {
+
+
+.col_1 div {
+	background: url('img/plitka_sprite.png') no-repeat;
+	background-position: -10px -570px;
+	height: 90px;
+	width: 90px;
 }
+
+.col_2 div {
+	background: url('img/plitka_sprite.png') no-repeat;
+	background-position: -10px -660px;
+	height: 90px;
+	width: 90px;
+}
+
+.col_3 div {  
+	background: url('img/plitka_sprite.png') no-repeat;
+	background-position: -10px -755px;
+	margin-top: 2%;
+	height: 90px;
+	width: 90px;
+}
+
+.col_4 div {  
+	background: url('img/plitka_sprite.png') no-repeat;
+	background-position: -10px -850px;
+	margin-top: 2%;
+	height: 90px;
+	width: 90px;
+}
+
+.col_5 {
+	clear: both;
+	margin: 5%;
+} 
+
+
+.button_3 {  /*------Мы подключаем технику всех марок производителей*/
+	margin-top: 3%;
+	margin-left: 30%;
+	padding: 0 50px;
+
+}
+
+
+.content_3_logo {
+	height: 300px;
+	width: 55%;
+	padding-top:4em ;
+	margin: 0 auto;
+}
+
+
+.logo_1, .logo_2, .logo_3, .logo_4, .logo_5,
+.logo_6, .logo_7, .logo_8, .logo_9, .logo_10,
+.logo_11, .logo_12, .logo_13, .logo_14, .logo_15,
+.logo_16, .logo_17, .logo_18, .logo_19, .logo_20,
+.logo_21, .logo_22, .logo_23, .logo_24, .logo_25
+{
+	background: url('img/plitka_sprite.png') no-repeat;
+	border-left: 1px solid #d3d3d3;
+	border-bottom: 1px solid #d3d3d3;
+	display: inline-block;
+	height: 56px;
+	width: 142px;
+
+}
+
+.logo_1 {
+	background-position: -648px -11px;
+
+}
+.logo_2 {
+	background-position: -800px -11px;
+
+}
+.logo_3 {
+	background-position: -950px -11px;
+}
+.logo_4 {
+	background-position: -648px -81px;
+}
+.logo_5 {
+	background-position: -800px -81px;
+}
+.logo_6 {
+	background-position: -950px -81px;
+}
+.logo_7 {
+	background-position: -648px -148px;
+}
+.logo_8 {
+	background-position: -800px -148px;
+}
+.logo_9 {
+	background-position: -950px -148px;
+}
+.logo_10 {
+	background-position: -648px -215px;
+}
+.logo_11 {
+	background-position: -800px -215px;
+}
+.logo_12 {
+	background-position: -950px -215px;
+}
+.logo_13 {
+	background-position: -648px -278px;
+}
+.logo_14 {
+	background-position: -800px -278px;
+}
+.logo_15 {
+	background-position: -950px -278px;
+}
+
+
+.logo_16 {
+	background-position: -648px -345px;
+}
+.logo_17 {
+	background-position: -800px -345px;
+}
+.logo_18 {
+	background-position: -950px -345px;
+}
+
+.logo_19 {
+	background-position: -648px -415px;
+}
+.logo_20 {
+	background-position: -800px -415px;
+}
+.logo_21 {
+	background-position: -950px -415px;
+}
+
+.logo_22 {
+	background-position: -648px -475px;
+}
+.logo_23 {
+	background-position: -800px -478px;
+}
+.logo_24 {
+	background-position: -950px -475px;
+}
+
+.logo_25 {
+	background-position: -648px -545px;
+}
+
 
 /*-------------Фиксированное меню---------------------*/
 
-.fix_menu {
-  /* http://shpargalkablog.ru/2013/09/scroll-block.html*/
-   background-color:#606566;
-   height: 180px;
-     opacity: .8;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-  }
-
-.gridcontainer {
-
-  bottom:140px;
-  height: 180px;
-  font-size: .8em;
-  line-height: 20px;
-
-  padding-left: 2%;
- 
-  top:310px;
-  text-align: center;
- 
-
+.grid_all {
+	background-color:#606566;
+	height: 180px;
+	opacity: .9;
+	position: relative;
+	top: -140px;
+	width: 100%;
 }
 
+.gridcontainer {
+	bottom:140px;
+	height: 180px;
+	font-size: .8em;
+	line-height: 20px;
+	opacity: .8;
+	margin-left:2%;
+	text-align: center;
+}
 
 .grid {
-
-  display: inline;
-  float: left;
+	display: inline;
+	float: left;
+	margin: 0;
 }
 
 .fmcircle_out {
-  background: url('img/plitka_sprite.png') no-repeat;
-  width: 200px;
-  height: 200px;
-  text-align: center;
-  display: block;
-  /*opacity: 0.7;*/
+	background: url('img/plitka_sprite.png') no-repeat;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	display: block;
 
-  border-radius: 100px;
-  -moz-border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -o-border-radius: 100px;
-  
-  transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  -ms-transition: all 0.2s linear;
-  
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-o-border-radius: 100px;
 
-  transform: scale(.7);
-  -moz-transform: scale(.7);
-  -ms-transform: scale(.7);
-  -webkit-transform: scale(.7);
-  -o-transform: scale(.7);
+	transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+
+
+	transform: scale(.7);
+	-moz-transform: scale(.7);
+	-ms-transform: scale(.7);
+	-webkit-transform: scale(.7);
+	-o-transform: scale(.7);
 }
 
 .fmcircle_out:hover {
-  /*border: solid 1px #393f40;*/
-  /*background-color: #ffce00;*/
+	opacity: 1; 
 
-  opacity: 1; 
-
-  transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -webkit-transform: scale(1);
-  -o-transform: scale(1);
+	transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-webkit-transform: scale(1);
+	-o-transform: scale(1);
 
 
-  transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  -ms-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
 
 
 }
@@ -246,132 +377,168 @@ h2 {
 
 .fmcircle_out:hover .fmcircle_in  {
 
-  transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  -ms-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
 }
 
 .one {
-  background-position: 25px 25px;
+	background-position: 25px 25px;
 
 }
 
 .two {
-  background-position: -195px 20px;
+	background-position: -195px 20px;
 }
 .three {
-  background-position: 21px -350px;
+	background-position: 21px -350px;
 }
 
 .four {
-  background-position: -399px 25px;
+	background-position: -400px 25px;
 }
 
 .five {
-  background-position: 23px -130px;
+	background-position: 23px -130px;
 }
 
 
 .six {
-  background-position: -190px -150px;
+	background-position: -190px -150px;
 }
 .seven {
-  background-position: -399px -150px;
+	background-position: -399px -150px;
 }
 
 .eight {
-  background-position: -190px -350px;
+	background-position: -190px -350px;
 }
 
 .fmcircle_in {
-  background-color:  ;
-  width: 170px;
-  height: 170px;
-  display: inline-block;
-  overflow: hidden;
-  border: 5px solid #ffce02;
+	background-color:  ;
+	width: 170px;
+	height: 170px;
+	display: inline-block;
+	overflow: hidden;
+	border: 5px solid #ffce02;
 
-  
-  border-radius: 100px;
-  -moz-border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -o-border-radius: 100px;
-  margin: 3px;
 
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  -ms-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-o-border-radius: 100px;
+	margin: 3px;
+
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	transition: all 0.2s linear;
 }
 
 
 
 .fmcircle_in span {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-  width: 130px;
-  background: #fff;
-  color: #000;
-  padding: 5px;
-  margin: 70px 0 0 -70px;
-  height: 20px;
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  float: left;
-  position: absolute;
-  opacity: 0;
-  
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -o-border-radius: 2px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	width: 130px;
+	background: #fff;
+	color: #000;
+	padding: 5px;
+	margin: 70px 0 0 -70px;
+	height: 20px;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	float: left;
+	position: absolute;
+	opacity: 0;
 
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  -ms-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-o-border-radius: 2px;
+
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	transition: all 0.2s linear;
 }
 
 .five span, .three span, .eight span {
-  height: 40px;
-  margin-top: 60px;
+	height: 40px;
+	margin-top: 60px;
 }
 
 .four span {
-  height: 60px;
-  margin-top: 50px;
+	height: 60px;
+	margin-top: 50px;
 }
 
 .fmcircle_out:hover .fmcircle_in span {
-  opacity: 1;
+	opacity: 1;
 
-  transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  -ms-transition: all 0.2s linear;
-  
+	transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
 
-  transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -o-transform: scale(1.2);
+
+	transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-o-transform: scale(1.2);
 }
 
-.footer {
- background-color: #393f40;
- height: 60px;
- min-width: 100%;
-}
+
+
+
+/*---------------------------footer------------------------------------*/
+
+	.footer {
+		background-color: #606566;
+		color:#fff;
+		height: 150px;
+		width: 100%;
+	}
+	.footer ul {
+		list-style:none;
+		padding: 2% 0 1% 0;
+		text-align: center;
+	}
+
+	.footer li {
+		display: inline;
+		padding: 1em;
+		text-transform: uppercase;
+	}
+
+	.footer a {
+		color:#fff;
+		font-size:.8em;
+		text-decoration: none;
+	}
+	.footer a:hover {
+		color: #ffce02;
+	}
+
+	.footer p {
+		border-top: 1px solid #d3d3d3;
+		font-size:.8em;
+		float: right;
+		padding: 2% 5% 0 5%;
+	}
+
+
+
 
 /*@media screen and (max-width: 1700px) {
 
@@ -448,4 +615,5 @@ h2 {
     display: none;}
 
   }
-*/
+  */
+

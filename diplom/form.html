@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Форма заказа</title>
+	
+	<link rel="stylesheet" href="./form.css" type="text/css">
+<script type="text/javascript" src="./form.js"></script>
+</head>
+<body>
+	
+<div id="Wrapp" >
+						<div id="exit">
+							<div id="form_all">
+								<a href="main.html" class="close" onclick="openbox('Wrapp')">X</a>
+								<form method="post">
+
+									<div id="post_1">
+										<div id="form-info">
+											<label>Имя<br></label>
+											<input type="text" name="quote_name" placeholder="Имя" required="required">
+										</div>
+									</div>
+
+									<div id="post_2">
+										<div id="form-info">
+											<label>Телефон<br></label>
+											<input type="text" name="quote_phone" placeholder="(Код)1234567" required="required" >
+										</div>
+									</div>
+									<div id="post_3">
+										<div id="form-info">
+											<label>Выбор услуги<br></label>
+
+											<select name="select" id="select">
+												<option value="value1" selected>Выполнить подключение:</option> 
+												<option value="value2">- стиральной машины</option>
+												<option value="value3">- посудомоечной машины</option>
+												<option value="value4">- электроплиты</option>
+												<option value="value5">- варочной поверхности</option>
+												<option value="value6">- духового шкафа</option>
+												<option value="value7">- вытяжки</option>
+												<option value="value8">- холодильника</option>
+											</select>
+
+										</div>
+									</div>
+									<div id="form-info">
+										<input type="submit" value="Вызвать мастера" class="zakas">
+									</div>
+									<input type="hidden" name="form_all" value="1">
+								</form>
+							</div>
+						</div>
+			</div>
+
+		</body>
+		</html>

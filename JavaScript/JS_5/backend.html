@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+<style>
+    #d1,
+    #d2,
+    #d3,
+    img {
+        /*border: 1px solid grey;*/
+        float: left;
+        height: 400px;
+        width: 400px;
+    }
+</style>
+
+<body>
+
+    <div class="content">
+        <div id="d1">
+            <input id="inp1" type=button value="Click" />
+        </div>
+        <div id="d2">
+            <input id="inp2" type=button value="Click" />
+        </div>
+        <div id="d3">
+            <input id="inp3" type=button value="Click" />
+
+        </div>
+    </div>
+
+</body>
+
+<script type="text/javascript">
+    var img = $('<img />', {
+        id: 'Myimg',
+        src: './img/abis.jpg',
+        alt: 'MyImage'
+    });
+
+
+    $.ajax("https://api.backendless.com/v1/data/present", {
+        "headers": {
+            "application-id": "A551F747-C144-2D62-FFE6-70E2C33DF800",
+            "secret-key": "C0D6DB79-4879-EBC1-FFDC-AB3B3D631A00"
+        },
+
+        success: function(r) {
+            console.log(r);
+
+
+
+
+
+            $("#inp1").click(function() {
+                     var $t = $("<table>"),
+                    $thead = $("<thead>"),
+                    $tbody = $("<tbody>");
+                $thead.html("<tr><th>comment</th><th>name</th><th>url</th></tr>");
+                $t.append($thead);
+                $("#d1").html($t);
+                for (var i = 0; i < 1; i++) {
+                    $tbody.append(["<tr>",
+                        "<td>", r.data[2].comment, "</td>",
+                        "<td>", r.data[2].name, "</td>",
+                        "<td><a href=\"", r.data[2].url, "\">", r.data[i].url, "</a></td>",
+                        "</tr>"
+                    ].join(''));
+                }
+                $t.append($tbody);
+
+//-------анимация в div
+
+                img.appendTo($('#d1'));
+                $("#Myimg").animate({
+                    width: "70%",
+                    opacity: 0.4,
+                }, 1500);
+
+            });
+
+
+            $("#inp2").click(function() {
+                var $t = $("<table>"),
+                    $thead = $("<thead>"),
+                    $tbody = $("<tbody>");
+                $thead.html("<tr><th>comment</th><th>name</th><th>url</th></tr>");
+                $t.append($thead);
+                $("#d2").html($t);
+
+                for (var i = 0; i < 1; i++) {
+                    $tbody.append(["<tr>",
+                        "<td>", r.data[1].comment, "</td>",
+                        "<td>", r.data[1].name, "</td>",
+                        "<td><a href=\"", r.data[1].url, "\">", r.data[i].url, "</a></td>",
+
+                        "</tr>"
+                    ].join(''));
+                }
+                $t.append($tbody);
+                
+//---------анимация в div
+
+                img.appendTo($('#d2'));
+                $("#Myimg").animate({
+                    height: "70%",
+                    opacity: 1,
+                }, 1500);
+            });
+
+            $("#inp3").click(function() {
+                var $t = $("<table>"),
+                    $thead = $("<thead>"),
+                    $tbody = $("<tbody>");
+                $thead.html("<tr><th>comment</th><th>name</th><th>url</th></tr>");
+                $t.append($thead);
+                $("#d3").html($t);
+
+                for (var i = 0; i < 1; i++) {
+                    $tbody.append(["<tr>",
+                        "<td>", r.data[0].comment, "</td>",
+                        "<td>", r.data[0].name, "</td>",
+                        "<td><a href=\"", r.data[0].url, "\">", r.data[i].url, "</a></td>",
+
+                        "</tr>"
+                    ].join(''));
+                }
+                $t.append($tbody);
+                
+//---------анимация в div
+
+                img.appendTo($('#d3'));
+            });
+        }
+    });
+</script>
+
+
+
+
+</html>

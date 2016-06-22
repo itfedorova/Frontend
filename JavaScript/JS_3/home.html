@@ -9,39 +9,30 @@
 <body>
 
   <script type="text/javascript">
-    //Случайное целое число в диапазоне, включая минимальное и максимальное.
-    //function getRandomInRange(min, max) {
-    //return Math.floor(Math.random() * (max - min + 1)) + min;
-    // }
-    // alert(getRandomInRange(10, -10));
-    
+    //Cлучайное целое число в диапазоне, включая минимальное и максимальное.
+    function getRandomInRange(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    alert(getRandomInRange(10, -10));
+
+
     // Пишем страничку, которая запрашивает у нас строку через promt и выводит сообщение,
     //является ли введенная строка палиндромом. 
-    
-// var str=prompt("Введите фразу для проверки","");
-function palindrome(str) {
-// Good luck!
-var revers = str.split("").reverse().join("").toLowerCase().replace(/\W/g, '').replace("_","");
 
-var actualStr =str.toLowerCase().replace(/\W/g, '').replace("_","");
+    var Str = prompt("Введите фразу для проверки", "");
 
-console.log(revers +" : "+actualStr);
-if(revers === actualStr)
-{return true;}
-else{return false;}
-}
+    function isPolydrom(myString) {
+      var removeChar = Str.replace(/[^A-Z0-9]/ig, "").toLowerCase();
+      var checkPalindrome = removeChar.split('').reverse().join('');
 
-alert(palindrome('Ах, топор? - Ропот! -Ха!'));
-
-      
-  //   document.write(myPoly + "это Полиндром");
-  // } else {
-
-  //   document.write(myPoly + "это НЕ Полиндром");
-  // }
-  //   } 
-    // alert(palindrome(myPoly));
-    
+      if (removeChar === checkPalindrome) {
+        return true;
+      }
+      else {
+        return false;
+      }
+    }
+    console.log(isPolydrom(Str));
   </script>
 
 

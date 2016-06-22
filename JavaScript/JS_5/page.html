@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="content"></div>
+
+</body>
+
+
+
+
+<script type="text/javascript">
+    $.ajax("https://api.backendless.com/v1/data/portfolio", {
+                "headers": {
+                    "application-id": "E2277DE9-40B5-C213-FF63-8FCE78386F00",
+                    "secret-key": "9CCF13B2-AC6E-2362-FF7D-5DCC96902400"
+                },
+                success: function(r) {
+                    console.log(r);
+
+                   
+                            var $t = $("<table>"),
+                                $thead = $("<thead>"),
+                                $tbody = $("<tbody>");
+                            $thead.html("<tr><th>comment</th><th>name</th><th>url</th></tr>");
+                            $t.append($thead); // собрали таблицу
+                            $("#content").html($t);
+
+                            for (var i = 0; i < r.data.length; i++) {
+                                $tbody.append(["<tr>",
+                                    "<td>", r.data[i].name, "</td>",
+                                    "<td><a href=\"", r.data[i].url, "\">", r.data[i].url, "</a></td>",
+                                    "<td>", r.data[i].comment, "</td>",
+                                    "</tr>"
+                                ].join(''));
+                            }
+                            $t.append($tbody);
+                }
+                });
+</script>
+
+
+
+
+</html>

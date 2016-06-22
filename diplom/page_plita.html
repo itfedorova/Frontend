@@ -4,70 +4,174 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Plita</title>
-	<link rel="stylesheet" href="page_plita.css" type="text/css">
+	
+	<link rel="stylesheet" href="./page_plita.css" type="text/css">
+<script type="text/javascript" src="form.js"></script>
+
 
 </head>
 <body>
 
 	<div class="header">
-		<div class="main"> <h1>Подключение<br> электроплиты</h1>
-			<div class="plita"></div>
+		<div class="main">
+			<h1>
+				Подключение
+				<br>электроплиты</h1>
+				<div class="plita"></div>
+			</div>
 		</div>
-	</div>
 
-<!-- --------------------Хлебные крошки------------ -->
-	<div class="menu">
-	<ul id="breadcrumbs-two">
-			<li><a href="#">Главная</a></li>
-			<li><a href="#" class="current">Подключение электроплиты</a></li>
-			<li><a href="#">Оформить заказ</a></li>
-		</ul>
-	</div>
+		<!-- --------------------Хлебные крошки------------ -->
 
+		<div class="menu">
+			<ul id="breadcrumbs-two">
+				<li>
+					<a href="#">Главная</a>
+				</li>
+				<li>
+					<a href="#" class="current">Подключение электроплиты</a>
+				</li>
+				<li>
+					<a href="#" onclick="openbox('Wrapp');return false;">Оформить заказ</a>
+				</li>
+			</ul>
+		</div>
 
-	<div class="content">
-		<div class="block_content">
-			<div class="block_circle"><div class="circle"><h3>Standart</h3>
-				<a href="#">Заказать</a></div></div>
-				<div class="block">
-					<h2>ВИДЫ РАБОТ ПАКЕТА "<strong>СТАНДАРТ</strong>"</h2>
-					<ul>
-						<li>Выезд специалиста.</li>
-						<li>Распаковка и визуальный осмотр техники.</li>
-						<li>Проверка готовности к подключению имеющейся у Вас силовой линии.</li>
-						<li>Отключение и демонтаж старой плиты.</li>
-						<li>Проверка всех соединений и контактов.</li>
-						<li>Установка электроплиты, на подготовленное место.</li>
-						<li>Выравнивание электроплиты по уровню во всех плоскостях.</li>
-						<li>Проверка работоспособности электроплиты.</li>
-						<li>Очистка рабочей зоны и уборка мусора, оставшегося после установки.</li>
-						<li>Демонстрация работы Вашей новой электроплиты.</li>
-						<li>Объяснение основных функций.</li>
-						<li>Подключение вилки и кабеля клиента.</li>
-					</ul>
+		<div class="content">
+
+			<div class="block_circle">
+				<div class="circle">
+					<h3>Standart</h3>
+					<a href="#">Заказать</a>
 				</div>
 			</div>
-			<div class="block_content">
-				<div class="block"><div class="circle"><h3>Premium</h3><a href="#">Заказать</a></div></div>
-				<div class="block_circle">
-					<h2>ВИДЫ РАБОТ ПАКЕТА "<strong>ПРЕМИУМ</strong>"</h2>
-					<ul>
-						<li>Все виды работ пакета "СТАНДАРТ".</li>
-						<li>Перфорация мебельных перегородок для прокладки коммуникаций.</li>
-						<li>Установка/замена розетки, предоставляемая мастером.</li>
-						<li>Подключение питающего кабеля к прибору, предоставляемый мастером.</li>
-						<li>Подключение вилки к питающему кабелю, предоставляемая мастером.</li>
-						<li>Подключение вилки и кабеля клиента.</li>
-						<p><br><br><br>* Материалы входящие в стоимость пакета «ПРЕМИУМ»: <br>
-							Розетка 40А; силовой кабель 2 м.; вилка 40А.
-						</p>
+
+			<div class="block">
+				<h2>
+					ВИДЫ РАБОТ ПАКЕТА <strong>&laquo;СТАНДАРТ&raquo;</strong>
+				</h2>
+				<ul>
+					<li>Выезд специалиста.</li>
+					<li>Распаковка и визуальный осмотр техники.</li>
+					<li>
+						Проверка готовности к подключению имеющейся у Вас силовой линии.
+					</li>
+					<li>Отключение и демонтаж старой плиты.</li>
+					<li>Проверка всех соединений и контактов.</li>
+					<li>Установка электроплиты, на подготовленное место.</li>
+					<li>Выравнивание электроплиты по уровню во всех плоскостях.</li>
+					<li>Проверка работоспособности электроплиты.</li>
+					<li>
+						Очистка рабочей зоны и уборка мусора, оставшегося после установки.
+					</li>
+					<li>Демонстрация работы Вашей новой электроплиты.</li>
+					<li>Объяснение основных функций.</li>
+					<li>Подключение вилки и кабеля клиента.</li>
+				</ul>
+			</div>
+
+			<div class="block_circle">
+				<h2>
+					ВИДЫ РАБОТ ПАКЕТА <strong>&laquo;ПРЕМИУМ&raquo;</strong>
+				</h2>
+				<ul>
+					<li>Все виды работ пакета &laquo;СТАНДАРТ&raquo;.</li>
+					<li>Перфорация мебельных перегородок для прокладки коммуникаций.</li>
+					<li>Установка/замена розетки, предоставляемая мастером.</li>
+					<li>
+						Подключение питающего кабеля к прибору, предоставляемый мастером.
+					</li>
+					<li>
+						Подключение вилки к питающему кабелю, предоставляемая мастером.
+					</li>
+					<li>Подключение вилки и кабеля клиента.</li>
+					<p>
+						<br>
+						<br>
+						* Материалы входящие в стоимость пакета &laquo;ПРЕМИУМ&raquo;:
+						<br>Розетка 40А; силовой кабель 2 м.; вилка 40А.</p>
 					</ul>
 				</div>
-			</div>	
 
-		</div>
-		<div class="both"><p>В стоимость ВСЕХ работ не входит: перенос розеток, углубление, штробление стен  и работы, не входящие в перечень выбранного пакета.</p></div>	
-		<div class="footer"></div>
+				<div class="block">
+					<div class="circle">
+						<h3>Premium</h3>
+						<a href="#">Заказать</a>
+					</div>
+				</div>
 
-	</body>
-	</html>
+			</div>
+
+			<div class="both">
+				<p>
+					В стоимость ВСЕХ работ не входит: перенос розеток, углубление, штробление стен  и работы, не входящие в перечень выбранного пакета!
+				</p>
+			</div>
+			
+			<div class="footer">
+				<div class="foot">
+					<ul>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Вытяжка</a></li>
+						<li><a href="#">Электроплита</a></li>
+						<li><a href="#">Стиральная и &frasl; или посудомоечная машина</a></li>
+						<li><a href="#">Холодильник</a></li>
+					</ul>
+				</div>
+				<p>С нами можно связаться по телефону: +375 (44) 123 45 67</p> 
+				<!-- <p>  &reg;2016 Все права защищены</p> -->
+			</div>
+
+
+<!--------------------Форма Оформить заказ------------------->
+
+
+					<div id="Wrapp" style="display:none"></div>
+						<div id="exit" style="display:none" >
+							<div id="form_all">
+								<div class="close" onclick="openbox('Wrapp')">X</div>
+								<form method="post">
+
+									<div id="post_1">
+										<div id="form-info">
+											<label>Имя<br></label>
+											<input type="text" name="quote_name" placeholder="Имя" required="required">
+										</div>
+									</div>
+
+									<div id="post_2">
+										<div id="form-info">
+											<label>Телефон<br></label>
+											<input type="text" name="quote_phone" placeholder="Телефон" required="required">
+										</div>
+									</div>
+									<div id="post_3">
+										<div id="form-info">
+											<label>Выбор услуги<br></label>
+
+											<select name="select" id="select">
+												<option value="value1" selected>Выполнить подключение:</option> 
+												<option value="value2">- стиральной машины</option>
+												<option value="value3">- посудомоечной машины</option>
+												<option value="value4">- электроплиты</option>
+												<option value="value5">- варочной поверхности</option>
+												<option value="value6">- духового шкафа</option>
+												<option value="value7">- вытяжки</option>
+												<option value="value8">- холодильника</option>
+											</select>
+
+										</div>
+									</div>
+									<div id="form-info">
+										<input type="submit" value="Вызвать мастера" class="zakas">
+									</div>
+									<input type="hidden" name="form_all" value="1">
+								</form>
+							</div>
+						</div>
+		
+
+
+
+		</body>
+		</html>

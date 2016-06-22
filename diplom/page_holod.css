@@ -1,0 +1,151 @@
+
+body {
+  /*background-image:url('img/rockywall.png');*/
+  margin: 0;
+  padding:0;
+  font-family:Geneva, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color:#fff;
+  float:left;
+  font-size:2.5em;
+  margin:7% 0 0 10%;
+
+  text-shadow: 0 5px 35px rgba(57,57,57,0.5);
+  -webkit-text-shadow: 0 5px 35px rgba(57,57,57,0.5);
+  -moz-text-shadow:0 5px 35px rgba(57,57,57,0.5);
+  text-align: center;
+}
+.header {
+  height: 247px;
+  width: 100%;
+}
+
+.main {
+  background-color:#54183f;
+  height: 247px;
+  width: 100%;
+}
+
+/*.plita {
+  /*background: url('img/page_plita.png') no-repeat;
+  background-position:center right;
+  float: right;
+  height: 247px;
+  width: 420px;
+}*/
+
+/*--------------Хлебные крошки---------------- */
+
+
+.menu li {
+
+  display: inline-block;
+  font-size:1em;
+  font-weight: bolder;
+  list-style:none;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.menu a:hover:not(.current) {
+  color: orange;
+}
+
+/*-------end-------Хлебные крошки---------end------- */
+
+
+
+
+
+h2 {
+  font-size:1.4em;
+  padding: 2%;
+  text-align: center;
+}
+
+strong {
+  color:#c92434;
+}
+
+.center {
+  background-color: #fcdc4d;
+}
+
+.content{
+	height: 100%;
+	width: 100%;
+}
+.content li {
+  list-style:square;
+}
+.left, .right {
+  /*border:1px solid red;*/
+  padding: 0 2% 2% 2%;
+  width: 44%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.center, .end {
+  clear:both;
+}
+
+.end p {
+    font-size:.7em;
+    padding: 2%;
+}
+
+.side {
+  margin: 3% auto;
+  width: 50%;
+}
+
+
+
+
+
+/*---------------------------footer------------------------------------*/
+
+  .footer {
+    background-color: #2D1854;
+    color:#fff;
+    height: 150px;
+    width: 100%;
+  }
+  .footer ul {
+    list-style:none;
+    padding: 2% 0 1% 0;
+    text-align: center;
+  }
+
+  .footer li {
+    display: inline;
+    padding: 1em;
+    text-transform: uppercase;
+  }
+
+  .footer a {
+    color:#fff;
+    font-size:.8em;
+    text-decoration: none;
+  }
+  .footer a:hover {
+    color: #ffce02;
+  }
+
+  .footer p {
+    border-top: 1px solid #d3d3d3;
+    font-size:.8em;
+    float: right;
+    padding: 2% 5% 0 5%;
+  }

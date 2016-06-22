@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html data-cloud9-id='1'>
+ <head data-cloud9-id='2'>
+  <meta data-cloud9-id='5' http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script data-cloud9-id='6' src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <title data-cloud9-id='7'>Три колонки</title>
+  <style data-cloud9-id='8'>
+      .header { background: #D5BAE4; }
+        #col1 {
+        float:left;
+         width: 500px;
+         height: 800px;
+         background: #C7E3E4; /* Цвет фона */
+        
+        }
+        #col2 { 
+        float:left;
+         background: #E0D2C7; 
+         width: 500px; /* Ширина колонки */
+         right: 100px; /* Сдвигаем влево на ширину колонки 3 */
+         height: 800px;
+        }
+        #col3 { float: left; background: #ECD5DE; width: 500px; right: 0; height: 800px;}
+        a{
+            padding: 7px;
+            background-color: green;
+            position: relative;
+            top: 20px;
+        }
+        img{
+            width: 200px; /* Ширина колонки */
+         height: 200px;
+        }
+        
+  </style>
+  
+ </head>
+ <body data-cloud9-id='3'>
+  <div data-cloud9-id='9' class="header">Шапка сайта</div>
+  <div data-cloud9-id='10' class="layout">
+   <div data-cloud9-id='11' id="col1"><button data-cloud9-id='12' id="buttonPer">Кнопка</button>
+   <div data-cloud9-id='13' id="a" style="position:absolute; left: 150px;"><img data-cloud9-id='14' src="" ></div>
+   </div>
+   <div data-cloud9-id='15' id="col2"><button data-cloud9-id='16' id="buttonDwa">Кнопка</button></div>
+   <div data-cloud9-id='17' id="col3"><button data-cloud9-id='18' id="buttonTri">Кнопка</button></div>
+  </div>
+  
+  <script data-cloud9-id='19'>
+  $(document).ready(function(){
+      $("#buttonPer").click(function(){
+        $('img').attr('src','http://1.bp.blogspot.com/_x1CSU7l73lg/S85DnrquiBI/AAAAAAAAAIk/4ax774huyjU/s1600/cat-mouth-full1.jpg');
+        $("#a").animate({left: '150px', });
+    
+           buttonPer.innerHTML=""; 
+          
+        
+    }); 
+    
+$("#buttonDwa").click(function(){
+    $('img').attr('src','http://1.bp.blogspot.com/_x1CSU7l73lg/S85DnrquiBI/AAAAAAAAAIk/4ax774huyjU/s1600/cat-mouth-full1.jpg');
+        $("#a").animate({left: '600px', });
+        buttonDwa.innerHTML="";
+}); 
+$("#buttonTri").click(function(){
+    $('img').attr('src','http://1.bp.blogspot.com/_x1CSU7l73lg/S85DnrquiBI/AAAAAAAAAIk/4ax774huyjU/s1600/cat-mouth-full1.jpg');
+        $("#a").animate({left: '1150px', });
+        buttonTri.innerHTML="";
+}); 
+}); 
+  </script>
+
+</body>
+</html>
+<script src="/_static/preview/livecss.js"></script>

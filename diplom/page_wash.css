@@ -1,0 +1,315 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/*----------------------MENU---------------------- */
+
+.nav {
+	background-color: #2D1854;
+	height: 45px;
+	position: relative;
+	text-align: center;
+}
+
+.nav ul {
+	margin: 0;
+	padding-top: 15px;
+}
+
+.nav li {
+	list-style: none;
+	display: inline-block;
+	margin: 0;
+}
+.nav li:last-child {
+	display: none;
+	}
+.nav a {
+	border-radius: 5px;
+	color: #fff;
+	font-weight: bolder;
+	text-decoration: none;
+	padding: 10px 20px;
+}
+
+.nav a:hover {
+	background-color: #ffce02;
+	color: #2D1854;
+}
+
+.nav .current a {
+	background-color: #ffce02;
+	color: #2D1854;
+}
+
+
+/*-------end-------------------MENU-----------------------end------- */
+
+
+/*----------------Side----------------------*/
+
+.side_left,
+.side,
+.side_right {
+	background-color: #fff;
+	margin-top: 2%;
+}
+
+.side_left {
+	background: url('./img/plitka_sprite.png') no-repeat;
+	background-position: -1020px -990px;
+	float: left;
+	height: 300px;
+	margin-left: 7%;
+	width: 20%;
+}
+
+.side {
+	float: left;
+	height: 300px;
+	width: 50%;
+}
+
+.side p {
+	font-size: 1em;
+	font-weight: bolder;
+	padding: 10% 10% 5% 0;
+	text-align: justify;
+}
+
+.side a {
+	background-color: red;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: bolder;
+	margin-left: 30%;
+	padding: 1em 2em;
+	text-decoration: none;
+	text-transform: uppercase
+}
+
+.side_right {
+	background: url('./img/plitka_sprite.png') no-repeat;
+	background-position: -1040px -715px;
+	float: left;
+	height: 300px;
+	width: 20%;
+}
+
+
+/*--------end--------Side---------------end-----------------*/
+
+h2 {
+	color: #2D1854;
+	font-size: 1.2em;
+	padding: 1% 0;
+	text-align: center;
+}
+
+strong {
+	color: #c92434;
+}
+
+h3 {
+	font-size: 1.1em;
+	padding-left: 3%;
+}
+
+.center {
+	background-color: #ffce02;
+}
+
+.content li {
+	list-style: square;
+	text-align: justify;
+}
+
+.left,
+.right {
+	background-color: #fff;
+	padding: 3%;
+	width: 44%;
+}
+
+.left p,
+.right p {
+	font-size: 1em;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.center,
+.end {
+	clear: both;
+}
+
+.end p {
+	font-size: .7em;
+	padding: 0 7%;
+	text-align: justify;
+}
+
+
+/*---------------------------footer------------------------------------*/
+
+.footer {
+	background-color: #2D1854;
+	color: #fff;
+	height: 200px;
+	width: 100%;
+}
+
+.footer ul {
+	list-style: none;
+	padding: 2% 0 1% 0;
+	text-align: center;
+}
+
+.footer li {
+	display: inline-block;
+	margin: .5%;
+	text-transform: uppercase;
+}
+
+.footer a {
+	color: #fff;
+	font-size: .8em;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	color: #ffce02;
+}
+
+.footer p {
+	border-top: 1px solid #d3d3d3;
+	font-size: .8em;
+	float: right;
+	padding: 3%;
+}
+
+
+/*--------------------media---------------------------- */
+
+@media screen and (max-width: 1024px) {
+	/*	.navigation {
+			display: block;
+			}*/
+}
+
+@media screen and (max-width: 980px) {
+	/*	.navigation, .nav_menu {
+			display: none;
+		}
+		*/
+}
+
+@media screen and (max-width: 860px) {
+	.nav ul {
+		border-left: solid #ccc;
+		background: #2D1854;
+		border-radius: 5px;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+		padding: 0;
+		position: absolute;
+		width: 50%;
+	}
+	.nav li {
+		display: none;
+		margin: 0;
+	}
+
+	.nav .current {
+		display: block;
+		/* показывайте только текущий элемент  */
+	}
+	.nav a {
+		display: block;
+		text-align: center;
+	}
+	.nav .current a {
+		background: none;
+		color: #ffce02;
+	}
+
+	.nav ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	
+	#form {
+		display: none;
+		}
+}
+
+@media screen and (max-width: 768px) {
+	h2 {
+		font-size: 1.1em;
+	}
+	h3 {
+		font-size: 1em;
+	}
+	.side_left,
+	.side_right {
+		display: none;
+	}
+	.side {
+		height: 180px;
+		width: 100%;
+	}
+	.side p {
+		padding: 4%;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	h2 {
+		font-size: .8em;
+	}
+	h3 {
+		font-size: .8em;
+	}
+	.side {
+		height: 140px;
+		width: 100%;
+	}
+	.side p {
+		font-size: .8em;
+	}
+	.left,
+	.right {
+		float: none;
+		padding: 0;
+		width: 90%;
+	}
+	.left li,
+	.right li {
+		font-size: .7em;
+	}
+	.end p {
+		font-size: .5em;
+	}
+	.footer {
+		height: 100px;
+	}
+	.footer ul,
+	.footer p {
+		margin: 0;
+		padding: 1%;
+	}
+	.footer a {
+		font-size: .6em;
+	}
+}

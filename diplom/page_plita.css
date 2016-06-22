@@ -1,235 +1,520 @@
- body {
- 	background-image:url('img/rockywall.png');
- 	box-sizing: border-box; 
- 	margin: 0;
- 	padding: 0;
- 	font-family: Geneva, Arial, Helvetica, sans-serif;
- }
+body {
+	background-image: url('img/rockywall.png');
+	margin: 0;
+	padding: 0;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
 
- h1 {
+h1 {
+	float: left;
+	font-size: 3em;
+	margin: 3% 0 0 30%;
+	text-shadow: 0 5px 35px rgba(57, 57, 57, 0.5);
+	-webkit-text-shadow: 0 5px 35px rgba(57, 57, 57, 0.5);
+	-moz-text-shadow: 0 5px 35px rgba(57, 57, 57, 0.5);
+}
 
- 	float:left;
- 	font-size:3em;
- 	padding: 3% 0 0 18%;
+.header {
+	height: 200px;
+	width: 100%;
+}
 
- 	text-shadow: 0 5px 35px rgba(57,57,57,0.5);
- 	-webkit-text-shadow: 0 5px 35px rgba(57,57,57,0.5);
- 	-moz-text-shadow:0 5px 35px rgba(57,57,57,0.5);
+.main {
+	background-color: #417282;
+	height: 200px;
+	width: 100%;
+}
 
-
- }
- .header	{
- 	height: 247px;
- 	width: 100%;
- }
-
- .main {
- 	background-color:#417282;
- 	height: 247px;
- 	width: 100%;
- }
-
- .plita {
- 	background: url('img/page_plita.png') no-repeat;
- 	background-position:center right;
- 	float: right;
- 	height: 247px;
- 	width: 420px;
- }
-
- /*--------------------Хлебные крошки------------*/
-
- .menu li {
- 	margin: 0;
- 	padding: 0;
- 	list-style: none;
- }
-
- #breadcrumbs-two {
- 	overflow: hidden;
- 	margin: 1% 0 1% 25%; 
- }
- 
- #breadcrumbs-two li{
- 	float: left;
- 	margin: 0 .5em 0 1em;
- }
- 
- #breadcrumbs-two a{
- 	background: #b1cccd;
- 	padding: .7em 1em;
- 	float: left;
- 	text-decoration: none;
- 	color: #444;
- 	text-shadow: 0 1px 0 rgba(255,255,255,.5);
- 	position: relative;
- }
- 
- #breadcrumbs-two a:hover{
- 	background: 	#e6d273;
- }
- 
- #breadcrumbs-two a::before{
- 	content: "";
- 	position: absolute;
- 	top: 50%;
- 	margin-top: -1.5em;
- 	border-width: 1.5em 0 1.5em 1em;
- 	border-style: solid;
- 	border-color: #b1cccd #b1cccd #b1cccd transparent;
- 	left: -1em;
- }
- 
- #breadcrumbs-two a:hover::before{
- 	border-color: #e6d273 #e6d273 #e6d273 transparent;
- }
- 
- #breadcrumbs-two a::after{
- 	content: "";
- 	position: absolute;
- 	top: 50%;
- 	margin-top: -1.5em;
- 	border-top: 1.5em solid transparent;
- 	border-bottom: 1.5em solid transparent;
- 	border-left: 1em solid #b1cccd;
- 	right: -1em;
- }
- 
- #breadcrumbs-two a:hover::after{
- 	border-left-color: #e6d273;
- }
- 
- #breadcrumbs-two .current,
- #breadcrumbs-two .current:hover{
- 	font-weight: bold;
- 	background: none;
- }
- 
- #breadcrumbs-two .current::after,
- #breadcrumbs-two .current::before{
- 	content: normal;
- }
-
- /*-------------end-------Хлебные крошки-------end-----*/
+.plita {
+	background: url('./img/page_plita.png') no-repeat;
+	background-position: center right;
+	float: right;
+	height: 200px;
+	width: 420px;
+}
 
 
- .content	{
- 	box-sizing: border-box;  
- 	height: 1010px;
- 	width: 100%;
+/*--------------------Хлебные крошки------------*/
 
- }
- h2 {
- 	padding-top: 12%;
- 	text-align: center;
- }
- h3 {
- 	font-size: 2.5em;
- 	margin: 40% 0;
- 	text-align:center;
- }
+.menu li {
+	font-size: 1em;
+	font-weight: bolder;
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
 
- strong {
- 	color:#c92434;
- }
+#breadcrumbs-two {
+	overflow: hidden;
+}
 
- .content ul {
- 	margin-left: 4%;
- 	/*list-style-image: linear-gradient( #c92434 50%, #FFB214 50%);*/
- list-style:square;
- }
+#breadcrumbs-two li {}
 
- /* --------- Оформить заказ  ---------*/
+#breadcrumbs-two a {
+	background: #b1cccd;
+	padding: .7em .9em;
+	float: left;
+	text-decoration: none;
+	color: #444;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+	position: relative;
+}
 
- .content a {  
- 	border: 2px solid #cfbd67;
+#breadcrumbs-two a:hover {
+	background: #e6d273;
+}
 
- 	border-radius: 20px;
- 	-moz-border-radius: 20px;
- 	-webkit-border-radius: 20px;
- 	-o-border-radius: 20px;
+#breadcrumbs-two a::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -1.5em;
+	border-width: 1.5em 0 1.5em 1em;
+	border-style: solid;
+	border-color: #b1cccd #b1cccd #b1cccd transparent;
+	left: -1em;
+}
 
- 	background-color:#e6d273;
- 	color:#264f50;
- 	padding: 5px 20px;
- 	text-decoration:none;
- 	position: relative;
- 	top:-100px;
- 	left:95px;
- }
+#breadcrumbs-two a:hover::before {
+	border-color: #e6d273 #e6d273 #e6d273 transparent;
+}
 
- /* ----end----- Оформить заказ -----end ---*/
+#breadcrumbs-two a::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -1.5em;
+	border-top: 1.5em solid transparent;
+	border-bottom: 1.5em solid transparent;
+	border-left: 1em solid #b1cccd;
+	right: -.8em;
+}
 
- .block_circle p{
- 	font-size: .8em;
- }
+#breadcrumbs-two a:hover::after {
+	border-left-color: #e6d273;
+}
 
- .block_content {
- 	box-shadow: 0 5px 35px rgba(57,57,57,0.5);
- 	-webkit-box-shadow: 0 5px 35px rgba(57,57,57,0.5);
- 	-moz-box-shadow:0 5px 35px rgba(57,57,57,0.5);
+#breadcrumbs-two .current,
+#breadcrumbs-two .current:hover {
+	font-weight: bold;
+	background: none;
+}
 
- 	border-left: 4px solid #264f50;
- 	border-right: 4px solid #264f50;
- 	border-top: 4px solid #264f50;
- 	margin: 0 auto;
- 	height: 500px;
- 	position: relative;
- 	width: 1000px;
- }
-
- .block_content:last-child {
- 	border-bottom: 4px solid #264f50;
- }
-
- .block, .block_circle {
-
- 	
- 	box-sizing: border-box;
- 	height: 500px;
- 	width: 500px;
- }
-
- .block {
- 	border-right:4px solid #264f50;
- 	float: left;
- }
- 
- .block_circle{
- 	float: right;
- }
+#breadcrumbs-two .current::after,
+#breadcrumbs-two .current::before {
+	content: normal;
+}
 
 
+/*-------------end-------Хлебные крошки-------end-----*/
 
- .circle {
- 	border: 4px solid #264f50;
+.content {
+	border: 2px solid #264f50;
+	margin: 0 auto;
+	height: 1000px;
+	width: 1000px;
+}
 
- 	box-shadow: 0 0 25px rgba(57,57,57,0.5);
- 	-webkit-box-shadow: 0 0 25px rgba(57,57,57,0.5);
- 	-moz-box-shadow:0 0 25px rgba(57,57,57,0.5);
+.content ul {
+	margin-left: 2%;
+	list-style: square;
+}
 
- 	border-radius: 200px;
- 	-moz-border-radius: 200px;
- 	-webkit-border-radius: 200px;
- 	-o-border-radius: 200px;
+.content li {
+	font-size: 1em;
+	margin-right: 5%;
+}
 
- 	height: 300px;
- 	margin: 100px auto;
+h2 {
+	font-size: 1.4em;
+	padding: 12% 5% 0 5%;
+	text-align: center;
+}
 
- 	width: 300px;
- }
- .both p {
+h3 {
+	font-size: 2.5em;
+	margin: 40% 0;
+	text-align: center;
+}
 
- 	font-size: 1em;
- 	font-weight: bolder;
- 	padding: 1% 0 0 6%;
- 	margin: 0;
- 	height: 30px;
- 	/*width: 100%;*/
- }
+strong {
+	color: #c92434;
+}
 
- .footer{
- 	background-color:#417282;
- 	height: 60px;
- 	width: 100%;
- }
+
+/* --------- Оформить заказ  ---------*/
+
+.content a {
+	border: 2px solid #cfbd67;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-o-border-radius: 20px;
+	background-color: #e6d273;
+	color: #264f50;
+	padding: 5px 20px;
+	text-decoration: none;
+	position: relative;
+	top: -100px;
+	left: 95px;
+}
+
+
+/* ----end----- Оформить заказ -----end ---*/
+
+.block_circle p {
+	font-size: .8em;
+	margin-right: 3%;
+}
+
+.block,
+.block_circle {
+	border: 2px solid #264f50;
+	box-sizing: border-box;
+	height: 500px;
+	width: 500px;
+	display: inline-block;
+	float: left;
+}
+
+.circle {
+	border: 4px solid #264f50;
+	box-shadow: 0 0 25px rgba(57, 57, 57, 0.5);
+	-webkit-box-shadow: 0 0 25px rgba(57, 57, 57, 0.5);
+	-moz-box-shadow: 0 0 25px rgba(57, 57, 57, 0.5);
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	-o-border-radius: 200px;
+	height: 300px;
+	margin: 100px auto;
+	width: 300px;
+}
+
+.both {
+	clear: both;
+}
+
+.both p {
+	font-size: 1em;
+	font-weight: bolder;
+	margin: 0 auto;
+	height: 20px;
+	text-align: center;
+	width: 100%;
+	padding: 2% 0 7% 0;
+}
+
+
+/*-----------Оформить заказ----------*/
+
+#Wrapp {
+	top: 0;
+	left: 0;
+	position: fixed;
+	background-color: #417282;
+	opacity: 0.85;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+#exit {
+	position: relative;
+	background-color: #fff;
+	margin: 20% auto auto auto;
+}
+
+.close {
+	cursor: pointer;
+	position: absolute;
+	font-weight: 700;
+	text-shadow: #000 1px 1px 0;
+	color: red;
+	right: 20px;
+	top: 15px;
+}
+
+#form_all {
+	width: 350px;
+	height: 300px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -150px;
+	margin-left: -150px;
+	background-color: #fff;
+	padding: 20px;
+	z-index: 2;
+}
+
+#post_1,
+#post_2,
+#post_3 {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+	margin: 5px 0;
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.zakas {
+	border-radius: 0;
+	color: #fff;
+	display: block;
+	left: 20%;
+	padding: 10px;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	width: 230px;
+	border: none;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	bottom: 40px;
+	background-color: #f97220 !important;
+}
+
+
+/*input["submit"] {*/
+
+
+/*	-webkit-appearance: button;*/
+
+
+/*	cursor: pointer;*/
+
+
+/*}*/
+
+input {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+#select {
+	font-size: 1.1em;
+	width: 300px;
+}
+
+
+/*---------------------------footer------------------------------------*/
+
+.footer {
+	background-color: #417282;
+	color: #fff;
+	height: 150px;
+	width: 100%;
+}
+
+.footer ul {
+	list-style: none;
+	padding: 2% 0 1% 0;
+	text-align: center;
+}
+
+.footer li {
+	display: inline;
+	padding: 1em;
+	text-transform: uppercase;
+}
+
+.footer a {
+	color: #fff;
+	font-size: .8em;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	color: #ffce02;
+}
+
+.footer p {
+	border-top: 1px solid #d3d3d3;
+	font-size: .8em;
+	float: right;
+	padding: 1% 15%;
+}
+
+
+/*--------------@media запросы---------------------------*/
+
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+	h1 {
+		margin: 6% 0 0 14%;
+	}
+	#breadcrumbs-two {
+		margin: 1% 0 1% 18%;
+	}
+	.content {
+		width: 100%;
+	}
+	.block,
+	.block_circle {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 760px) and (max-width: 899px) {
+	h1 {
+		margin: 6% 0 0 8%;
+	}
+	.plita {
+		width: 350px;
+	}
+	#breadcrumbs-two {
+		margin: 1% 0 1% 10%;
+	}
+	.content {
+		width: 100%;
+	}
+	.block,
+	.block_circle {
+		width: 50%;
+	}
+	.content ul {
+		margin-left: 0;
+	}
+}
+
+@media screen and (min-width: 505px) and (max-width: 759px) {
+	h1 {
+		font-size: 2.2em;
+		margin: 10% 0 0 10%;
+	}
+	h2 {
+		font-size: 1em;
+		padding: 3% 3% 0 3%;
+	}
+	h3 {
+		font-size: 2em;
+	}
+	.plita {
+		width: 40%;
+	}
+	.menu li {
+		font-size: .7em;
+	}
+	#breadcrumbs-two {
+		margin: 1% 0;
+		padding-left: 5%;
+	}
+	.content {
+		width: 100%;
+	}
+	.block,
+	.block_circle {
+		width: 50%;
+	}
+	.content li {
+		font-size: .8em;
+		margin-right: 1%;
+	}
+	.circle {
+		height: 200px;
+		margin: 100px auto;
+		width: 200px;
+	}
+	.content a {
+		top: -75px;
+		left: 45px;
+	}
+	.block_circle p {
+		font-size: .6em;
+		margin: 0 3%;
+		padding: 0;
+	}
+	.both p {
+		font-size: .7em;
+	}
+}
+
+@media screen and (max-width: 504px) {
+	.main,
+	.header {
+		height: 150px;
+	}
+	h1 {
+		font-size: 2.1em;
+		margin: 9% 15%;
+	}
+	h2 {
+		font-size: .7em;
+		padding: 1% 2% 0 2%;
+	}
+	h3 {
+		font-size: 2em;
+	}
+	.plita {
+		display: none;
+	}
+	#breadcrumbs-two {
+		padding-left: 3%;
+	}
+	#breadcrumbs-two li {
+		font-size: .7em;
+	}
+	#breadcrumbs-two a {
+		padding: .4em .7em;
+	}
+	#breadcrumbs-two a::before {
+		margin-top: -1.2em;
+		border-width: 1.2em 0 1.2em 1.1em;
+		left: -.9em;
+	}
+	#breadcrumbs-two a::after {
+		margin-top: -1em;
+		border-top: 1em solid transparent;
+		border-bottom: 1em solid transparent;
+		border-left: 1em solid #b1cccd;
+		right: -.9em;
+	}
+	.content ul {
+		margin-left: 0;
+	}
+	.block,
+	.block_circle {
+		height: 250px;
+		width: 100%;
+		float: none;
+	}
+	.content li {
+		font-size: .7em;
+		margin-right: 5%;
+	}
+	.circle {
+		height: 200px;
+		margin: 20px auto;
+		width: 200px;
+	}
+	.content a {
+		top: -75px;
+		left: 45px;
+	}
+	.content ul {
+		margin: 0 1%;
+	}
+	.block_circle p {
+		font-size: .5em;
+	}
+	.both p {
+		font-size: .7em;
+	}
+	.both {
+		clear: both;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	#breadcrumbs-two {
+		padding-left: 3%;
+	}
+	#breadcrumbs-two li {
+		font-size: .6em;
+	}
+}

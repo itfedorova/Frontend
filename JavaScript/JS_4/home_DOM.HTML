@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #d1,
+        #d2,
+        #d3,
+        img {
+            border: 1px solid red;
+            height: 400px;
+            width: 400px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+
+</body>
+<script type="text/javascript">
+    var content,
+        div1 = '<div id="d1"><input onclick="f1()" type=button value="Показать/Спрятать" /></div>',
+        div2 = '<div id="d2"><input onclick="f2()" type=button value="Показать/Спрятать" /></div>',
+        div3 = '<div id="d3"><input onclick="f3()" type=button value="Показать/Спрятать" /></div>',
+        img = '<img src="img/abis.jpg" />';
+
+    content = div1 + div2 + div3;
+    var b = document.getElementsByTagName("body")[0];
+    b.innerHTML = content;
+
+    function f1() {
+        b.innerHTML = content;
+        document.getElementById("d1").innerHTML = img;
+    }
+
+    function f2() {
+        b.innerHTML = content;
+        document.getElementById("d2").innerHTML = img;
+    }
+
+    function f3() {
+        b.innerHTML = content;
+        document.getElementById("d3").innerHTML = img;
+    }
+</script>
+
+
+</html>

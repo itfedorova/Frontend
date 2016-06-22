@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="/js/jquery/jquery-css-transform.js" type="text/javascript"></script>
+    </script>
+    <style>
+        #d1,
+        #d2,
+        #d3,
+        img {
+            border: 1px solid grey;
+            float: left;
+            height: 400px;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <div id="d1">
+            <input id="inp1" type=button value="Click" />
+        </div>
+        <div id="d2">
+            <input id="inp2" type=button value="Click" />
+        </div>
+        <div id="d3">
+            <input id="inp3" type=button value="Click" />
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript">
+    var img1 = $('<img />', {
+        id: 'Myimg1',
+        src: './img/abis.jpg',
+        alt: 'MyImage1'
+    });
+    var img2 = $('<img />', {
+        id: 'Myimg2',
+        src: './img/abis.jpg',
+        alt: 'MyImage2'
+    });
+    var img3 = $('<img />', {
+        id: 'Myimg3',
+        src: './img/abis.jpg',
+        alt: 'MyImage3'
+    });
+
+    $("#inp1").click(function() {
+        $("#inp1").replaceWith();
+        img1.appendTo($('#d1'));
+        $("#Myimg1").animate({
+            width: "70%",
+            opacity: 0.4,
+        }, 1500);
+    });
+
+    $('#inp2').click(function() {
+        $("#inp2").replaceWith();
+        img2.appendTo($('#d2'));
+        $("#Myimg2").animate({
+            height: "70%",
+            opacity: 1,
+        }, 1500);
+    });
+
+
+    $('#inp3').click(function() {
+        $("#inp3").replaceWith();
+        img3.appendTo($('#d3'));
+        $("#Myimg3").animate({
+            scale: "2"
+        }, 500);
+    });
+</script>
+
+
+</html>

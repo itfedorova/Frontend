@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+<style type="text/css">
+    /*#div1 {*/
+    /*    border: 2px solid #000;*/
+    /*    background-color: yellow;*/
+    /*    height: 100px;*/
+    /*}*/
+    
+    /*#div2 {*/
+    /*    background-color: orange;*/
+    /*    border: 2px solid green;*/
+    /*    margin-top: 10px;*/
+    /*    height: 100px;*/
+    /*}*/
+</style>
+
+<body>
+
+    <div class="div1">First </div>
+    <div class="div2"> Second</div>
+
+    <script type="text/javascript">
+    
+    
+        var element = document.getElementsByClassName('div1'); //возвращает ссылку на узел документа, которую можно использовать для изменения свойств и обращения к методам узла
+        console.log(element);
+        element[0].style.backgroundColor="red";
+        element[0].style.border="2px solid #000";
+         element[0].style.height="100px";
+        //console.log(element);
+
+        // var qwerty = document.getElementsByClassName('Mydiv');
+        //console.log(qwerty);
+
+        //  var qwerty = document.getElementsByTagName('div1'); 
+        //  console.log(qwerty);
+    </script>
+
+</body>
+
+</html>
